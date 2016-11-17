@@ -1,0 +1,46 @@
+<table class="table table-bordered table-hover">
+    <thead>
+    <tr>
+        <th *ngIf="checkbox" class="cb">
+            <input type="checkbox" #ca [checked]="isCheckAll" (change)="checkAll(ca.checked)">
+        </th>
+        <th *ngIf="index" class="index">序号</th>
+        <th *ngFor="let column of columns;let i = index;" [style.width]="column.width">{{column.title}}</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let data of currentPageData;let i = index">
+        <td *ngIf="checkbox">
+            <input type="checkbox" [checked]="isCheckAll" #cb (change)="check(i, cb.checked)">
+        </td>
+        <td *ngIf="index">{{i + 1}}</td>
+        <td *ngFor="let column of columns;">{{data[column?.field]}}</td>
+    </tr>
+    </tbody>
+    <tfoot>
+    <tr *ngIf="hasData">
+        <td *ngIf="checkbox" class="cb">
+            <input type="checkbox" #ca [checked]="isCheckAll" (change)="checkAll(ca.checked)">
+        </td>
+        <td [attr.colspan]="tfootColspan"
+            [style.text-align]="'right'"
+            [style.padding]="'0 .6rem'">
+            <ngb-pagination [collectionSize]="size"
+                            [(page)]="currentPage"
+                            size="sm"
+                            [rotate]="true"
+                            [ellipses]="false"
+                            [boundaryLinks]="true"
+                            [pageSize]="pageSize"
+                            [maxSize]="5"
+                            [style.float]="'right'"
+                            (pageChange)="pageChange($event)"
+            ></ngb-pagination>
+            <div class="paginationInfo">共有{{size}}条，每页{{pageSize}}条</div>
+        </td>
+    </tr>
+    <tr *ngIf="!hasData">
+        <td [attr.colspan]="noDataColspan" [style.background-color]="'inherit'">没有找到匹配的记录</td>
+    </tr>
+    </tfoot>
+</table>

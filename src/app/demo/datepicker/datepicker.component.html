@@ -1,0 +1,76 @@
+<h3>Datepicker</h3>
+<br>
+<br>
+<label class="label label-primary">输入框日期</label>
+<br>
+<br>
+<yk-button [classType]="'success'" (click)="selectToday2()">选择今天</yk-button>
+<yk-button [classType]="'success'" (click)="ykdpnormal.navigateTo()">导航到本月</yk-button>
+<yk-button [classType]="'success'" (click)="ykdpnormal.navigateTo({year: 2020, month: 1})">导航到2020年1月</yk-button>
+<yk-button [classType]="'success'" (click)="ykdpnormal.open()">从外部打开</yk-button>
+<yk-button [classType]="'success'" (click)="ykdpnormal.close()">从外部关闭</yk-button>
+<yk-button [classType]="'success'" (click)="ykdpnormal.toggle()">从外部切换</yk-button>
+<br>
+<br>
+<yk-datepicker [label]="'普通日期'" #ykdpnormal [model]="model3"></yk-datepicker>
+<yk-datepicker [label]="'国际化日期'" [language]="'en'"></yk-datepicker>
+<yk-datepicker [label]="'最大最小时间设置'"
+               [minDate]="{year: 2015, month: 1, day: 1}"
+               [maxDate]="{year: 2016, month: 12, day: 31}"></yk-datepicker>
+<yk-datepicker [label]="'个性化设置'"
+               [showNavigation]="false"
+               [showWeekdays]="false"
+               [showWeekNumbers]="true"></yk-datepicker>
+<yk-datepicker [label]="'自定义开始日期'" [startDate]="{year: 2015, month: 4}"></yk-datepicker>
+<br>
+<br>
+<br>
+<br>
+<label class="label label-primary">静态日期</label>
+<br>
+<div class="row">
+    <div class="col-md-4">
+        <p>普通日期</p>
+        <yk-datepicker-static #ykdp [model]="model1" (modelChange)="setModel1($event)"></yk-datepicker-static>
+        <br>
+        <pre>当前选择的日期是： {{ model1 | json }}</pre>
+        <yk-button [classType]="'success'" (click)="selectToday()">选择今天</yk-button>
+        <yk-button [classType]="'success'" (click)="ykdp.navigateTo()">导航到本月</yk-button>
+        <yk-button [classType]="'success'" (click)="ykdp.navigateTo({year: 2020, month: 1})">导航到2020年1月</yk-button>
+    </div>
+    <div class="col-md-4">
+        <p>国际化日期</p>
+        <yk-datepicker-static [language]="'en'" [model]="model2"
+                              (modelChange)="setModel2($event)"></yk-datepicker-static>
+        <br>
+        <pre>当前选择的日期是： {{ model2 | json }}</pre>
+    </div>
+    <div class="col-md-4">
+        <p>最大最小时间设置</p>
+        <yk-datepicker-static [minDate]="{year: 2015, month: 1, day: 1}"
+                              [maxDate]="{year: 2016, month: 12, day: 31}"></yk-datepicker-static>
+        <br>
+        <pre>最大时间：year: 2016, month: 12, day: 31</pre>
+        <pre>最小时间：year: 2015, month: 1, day: 1</pre>
+    </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<div class="row">
+    <div class="col-md-4">
+        <p>个性化设置</p>
+        <yk-datepicker-static [showNavigation]="false"
+                              [showWeekdays]="false"
+                              [showWeekNumbers]="true"></yk-datepicker-static>
+        <br>
+        <pre>不显示导航、星期、显示周</pre>
+    </div>
+    <div class="col-md-4">
+        <p>自定义开始日期</p>
+        <yk-datepicker-static [startDate]="{year: 2015, month: 4}"></yk-datepicker-static>
+        <br>
+        <pre>开始日期：year: 2015, month: 4</pre>
+    </div>
+</div>

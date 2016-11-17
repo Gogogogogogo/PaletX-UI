@@ -1,0 +1,18 @@
+<h3>Alert</h3>
+<yk-alert [isShow]="true">这是一个danger的提示框！</yk-alert>
+<yk-alert [isShow]="true" [type]="'success'">这是一个success的提示框！</yk-alert>
+<yk-alert [isShow]="true" [type]="'info'">这是一个info的提示框！</yk-alert>
+<yk-alert [isShow]="true" [type]="'warning'">这是一个warning的提示框！</yk-alert>
+<br>
+<br>
+<yk-alert #normal1>这是一个默认的提示框！</yk-alert>
+<yk-button [classType]="'primary'" (click)="normal1.show()">打开提示1</yk-button>
+<yk-button [classType]="'primary-outline'" (click)="normal1.hide()">关闭提示1</yk-button>
+<br>
+<br>
+<yk-alert #normal2 [timeout]="2000">这是一个倒计时2s自动关闭的提示框！</yk-alert>
+<yk-button [classType]="'primary'" (click)="normal2.show()">打开可以自动关闭的提示2</yk-button>
+<br>
+<br>
+<yk-alert #normal3 [timeout]="2000" [fixed]="true" [type]="'success'">这是一个倒计时2s自动关闭的提示框，位置固定！</yk-alert>
+<yk-button [classType]="'primary'" (click)="normal3.show()">打开位置固定的提示3</yk-button>

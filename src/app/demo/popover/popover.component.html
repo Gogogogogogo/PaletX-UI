@@ -1,0 +1,45 @@
+<h3>Popover</h3>
+<br>
+<br>
+<p>这是一段文字，其中<a role="button"
+               placement="top"
+               ngbPopover="popover在顶部"
+               popoverTitle="我是标题">我</a>有popover在顶部</p>
+<p>这是一段文字，其中<a role="button"
+               placement="right"
+               ngbPopover="popover在右边"
+               popoverTitle="我是标题">我</a>有popover在右边</p>
+<p>这是一段文字，其中<a role="button"
+               placement="bottom"
+               ngbPopover="popover在底部"
+               popoverTitle="我是标题">我</a>有popover在底部</p>
+<p>这是一段文字，其中<a role="button"
+               placement="left"
+               ngbPopover="popover在左边"
+               popoverTitle="我是标题">我</a>有popover在左边</p>
+<br>
+<br>
+<br>
+<template #popContent>Hello, <b>{{name}}</b>!</template>
+<p>这是一段文字，其中<a role="button"
+               placement="top"
+               [ngbPopover]="popContent"
+               popoverTitle="我是标题">我</a>有自定义的popover</p>
+<p>这是一段文字，其中<a role="button"
+               placement="top"
+               ngbPopover="hover触发的popover"
+               triggers="mouseenter:mouseleave"
+               popoverTitle="我是标题">我</a>有hover触发的popover</p>
+<br>
+<br>
+<br>
+<p>这是一段文字，其中<a role="button"
+               placement="top"
+               ngbPopover="从外部触发的popover"
+               #p="ngbPopover"
+               popoverTitle="我是标题"
+               triggers="manual">我</a>有可以从外部触发的tooltip</p>
+<p>当前的popover打开状态为：{{p.isOpen()}}</p>
+<yk-button [classType]="'primary'" (click)="p.open()">点击触发popover</yk-button>
+<yk-button [classType]="'primary'" (click)="p.close()">点击关闭popover</yk-button>
+<yk-button [classType]="'primary'" (click)="p.toggle()">点击切换popover</yk-button>

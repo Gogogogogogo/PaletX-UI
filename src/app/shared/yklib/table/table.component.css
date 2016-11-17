@@ -1,0 +1,101 @@
+.table {
+    min-width: 960px;
+}
+
+.table td, .table th {
+    line-height: 1;
+    text-align: center;
+    padding: 10px;
+}
+
+.table th {
+    background-color: #eeeeee;
+    font-weight: normal;
+    color: #333333;
+    border: solid 1px #e6e6e6;
+    vertical-align: middle;
+}
+
+.table td {
+    border-color: #e6e6e6;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #666666;
+    vertical-align: middle;
+}
+
+.table tbody tr:hover {
+    background-color: #e7f6ff;
+}
+
+.table tbody tr:hover td {
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-color: #c9e6f2;
+}
+
+th.index {
+    width: 48px;
+}
+
+th.cb {
+    width: 48px;
+}
+
+.paginationInfo {
+    float: right;
+    padding-top: 5px;
+    padding-right: 16px;
+}
+
+.table tfoot td {
+    background-color: #eeeeee;
+    font-weight: normal;
+    color: #333333;
+    border: solid 1px #e6e6e6;
+    vertical-align: middle;
+}
+
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    background-size: 16px 16px;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    margin-right: 0;
+    height: 16px;
+    width: 16px;
+    outline: none;
+    vertical-align: bottom;
+    margin-top: 0;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:hover {
+    background-image: url("../../../../../public/images/icon_select_normal.png");
+    outline: none;
+    border: none;
+}
+
+input[type="checkbox"]:focus {
+    outline: none;
+}
+
+input[type="checkbox"]:checked {
+    background-image: url("../../../../../public/images/icon_select_selected.png");
+    outline: none;
+    border: none;
+}
+
+input[type="checkbox"]:disabled, input[type="checkbox"]:disabled:hover {
+    background-image: url("../../../../../public/images/icon_select_disabled.png");
+    outline: none;
+    border: none;
+    cursor: not-allowed;
+}
+
+input[type="checkbox"]:disabled:checked, input[type="checkbox"]:disabled:checked:hover {
+    background-image: url("../../../../../public/images/icon_select_disabled_checked.png");
+    outline: none;
+    border: none;
+    cursor: not-allowed;
+}

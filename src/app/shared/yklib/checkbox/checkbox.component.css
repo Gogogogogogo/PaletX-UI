@@ -1,0 +1,57 @@
+label {
+    cursor: pointer;
+    margin: 0 12px 12px 0;
+}
+
+label.dis {
+    cursor: not-allowed;
+}
+
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    background-size: 16px 16px;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    margin-right: 0;
+    height: 16px;
+    width: 16px;
+    outline: none;
+    vertical-align: bottom;
+    margin-top: 0;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:hover {
+    background-image: url("../../../../../public/images/icon_select_normal.png");
+    outline: none;
+    border: none;
+}
+
+input[type="checkbox"]:focus {
+    outline: none;
+}
+
+input[type="checkbox"]:checked {
+    background-image: url("../../../../../public/images/icon_select_selected.png");
+    outline: none;
+    border: none;
+}
+
+input[type="checkbox"]:disabled, input[type="checkbox"]:disabled:hover {
+    background-image: url("../../../../../public/images/icon_select_disabled.png");
+    outline: none;
+    border: none;
+    cursor: not-allowed;
+}
+
+input[type="checkbox"]:disabled:checked, input[type="checkbox"]:disabled:checked:hover {
+    background-image: url("../../../../../public/images/icon_select_disabled_checked.png");
+    outline: none;
+    border: none;
+    cursor: not-allowed;
+}
+
+.cb-content {
+    display: inline-block;
+    margin-bottom: 2.4px;
+}

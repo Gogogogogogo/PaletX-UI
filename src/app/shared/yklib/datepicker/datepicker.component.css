@@ -1,0 +1,74 @@
+.all-wrapper {
+    margin-bottom: 12px;
+}
+
+.datepicker-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.datepicker-input {
+    padding-left: 6px;
+    height: 30px;
+    border: 1px solid #dddddd;
+    border-radius: 2px;
+    outline: none;
+    box-shadow: none;
+    font-weight: normal;
+    color: #333333;
+}
+
+.datepicker-input:focus {
+    border-color: #1898eb;
+}
+
+.datepicker-addon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 7px;
+}
+
+.datepicker-addon i {
+    cursor: pointer;
+}
+
+.datepicker-addon i:focus {
+    color: #1898eb;
+}
+
+.form-label {
+    padding-right: 12px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.custom-day {
+    text-align: center;
+    padding: 4px;
+    border-radius: 12px;
+    display: inline-block;
+    width: 24px;
+}
+.custom-day:hover {
+    background-color: #e6e6e6;
+}
+/*.weekend {
+    background-color: #f0ad4e;
+    color: white;
+    border-radius: .75rem;
+}*/
+.hidden {
+    display: none;
+}
+
+.datepicker-wrapper-static {
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.15);
+    background-color: #fff;
+    font-size: 12px;
+    border-radius: 2px;
+    display: block;
+    padding: 5px;
+    width: 244px;
+}

@@ -1,0 +1,63 @@
+<h3>Tab</h3>
+<ngb-tabset #t1="ngbTabset">
+    <ngb-tab title="简单的标题">
+        <template ngbTabContent>
+            这是内容一
+        </template>
+    </ngb-tab>
+    <ngb-tab id="bar1">
+        <template ngbTabTitle><b>特别的</b>标题</template>
+        <template ngbTabContent>
+            这是内容二
+        </template>
+    </ngb-tab>
+    <ngb-tab title="Disabled的标题" [disabled]="true">
+        <template ngbTabContent>
+            <p></p>
+        </template>
+    </ngb-tab>
+</ngb-tabset>
+<br>
+<br>
+<br>
+<br>
+<ngb-tabset type="pills" #t2="ngbTabset">
+    <ngb-tab title="简单的标题">
+        <template ngbTabContent>
+            这是内容一
+        </template>
+    </ngb-tab>
+    <ngb-tab id="bar2">
+        <template ngbTabTitle><b>特别的</b>标题</template>
+        <template ngbTabContent>
+            这是内容二
+        </template>
+    </ngb-tab>
+    <ngb-tab title="Disabled的标题" [disabled]="true">
+        <template ngbTabContent>
+        </template>
+    </ngb-tab>
+</ngb-tabset>
+<br>
+<br>
+<br>
+<br>
+<yk-button [classType]="'success'" (click)="t1.select('bar1');t2.select('bar2')">从外部选择指定tab</yk-button>
+<br>
+<br>
+<br>
+<br>
+<p>从外部阻止tab切换</p>
+<ngb-tabset #t3="ngbTabset" (tabChange)="beforeChange($event)">
+    <ngb-tab title="简单的标题">
+        <template ngbTabContent>
+            这是内容一
+        </template>
+    </ngb-tab>
+    <ngb-tab id="bar3">
+        <template ngbTabTitle><b>特别的</b>标题</template>
+        <template ngbTabContent>
+            这是内容二
+        </template>
+    </ngb-tab>
+</ngb-tabset>

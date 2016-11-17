@@ -1,0 +1,17 @@
+.content {
+    margin-left: 200px;
+    padding-top: 60px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+@media (max-width: 767px) {
+    .content {
+        margin-left: 0;
+    }
+}
+
+.sidebar-collapsed.content {
+    margin-left: 0;
+}

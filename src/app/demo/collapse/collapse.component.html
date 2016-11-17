@@ -1,0 +1,14 @@
+<h3>Collapse</h3>
+
+<yk-button [classType]="'primary'" (click)="isCollapsed = !isCollapsed">切换折叠</yk-button>
+<br>
+<br>
+<div [ngbCollapse]="isCollapsed">
+    <div class="row">
+        <div class="card col-md-4">
+            <div class="card-block">
+                这是一个折叠中的内容
+            </div>
+        </div>
+    </div>
+</div>

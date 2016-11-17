@@ -1,0 +1,53 @@
+<h3>Timepicker</h3>
+<br>
+<br>
+<div class="row">
+    <div class="col-md-3">
+        <label class="label label-primary">普通的</label>
+        <yk-timepicker [model]="model1" (modelChange)="model1Change($event)"></yk-timepicker>
+        <br>
+        <pre>当前选择的时间是： {{ model1 | json }}</pre>
+    </div>
+    <div class="col-md-3">
+        <label class="label label-primary">开启AM/PM模式</label>
+        <yk-timepicker [model]="model2"
+                       (modelChange)="model2Change($event)"
+                       [meridian]="true"></yk-timepicker>
+        <br>
+        <pre>当前选择的时间是： {{ model2 | json }}</pre>
+    </div>
+    <div class="col-md-3">
+        <label class="label label-primary">带秒</label>
+        <yk-timepicker [model]="model3"
+                       (modelChange)="model3Change($event)"
+                       [seconds]="true"></yk-timepicker>
+        <br>
+        <pre>当前选择的时间是： {{ model3 | json }}</pre>
+    </div>
+    <div class="col-md-3">
+        <label class="label label-primary">不带上下滚动键</label>
+        <yk-timepicker [model]="model4"
+                       (modelChange)="model4Change($event)"
+                       [spinners]="false"></yk-timepicker>
+        <br>
+        <pre>当前选择的时间是： {{ model4 | json }}</pre>
+    </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<div class="row">
+    <div class="col-md-3">
+        <label class="label label-primary">自定义跨步</label>
+        <yk-timepicker [model]="model5"
+                       (modelChange)="model5Change($event)"
+                       [seconds]="true"
+                       [hourStep]="3"
+                       [minuteStep]="15"
+                       [secondStep]="30"></yk-timepicker>
+        <br>
+        <p>小时跨步：3，分钟跨步：15，秒钟跨步：30</p>
+        <pre>当前选择的时间是： {{ model5 | json }}</pre>
+    </div>
+</div>

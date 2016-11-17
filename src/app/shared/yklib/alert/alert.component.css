@@ -1,0 +1,14 @@
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 15%;
+    right: 15%;
+    z-index: 9999;
+}
+
+.close {
+    text-shadow: none;
+    outline: none;
+    vertical-align: middle;
+    margin-top: -5.6px;
+}

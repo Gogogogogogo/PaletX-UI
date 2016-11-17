@@ -1,0 +1,25 @@
+<div [formGroup]="form" class="form-wrapper">
+    <label *ngIf="showLabel"
+           [attr.for]="model.key"
+           class="form-label"
+    >{{model.label}}</label>
+    <div [ngSwitch]="model.controlType"
+         class="form-content">
+        <input *ngSwitchCase="'textbox'"
+               [formControlName]="model.key"
+               class="form-content-text"
+               [id]="model.key"
+               [type]="model.type"
+               [placeholder]="model.placeholder"
+               [style.width]="model.width">
+        <select [id]="model.key"
+                *ngSwitchCase="'dropdown'"
+                [formControlName]="model.key"
+                class="form-content-select"
+                [style.width]="model.width">
+            <option *ngFor="let opt of model.options" [value]="opt.key">{{opt.value}}</option>
+        </select>
+    </div>
+    <div class="errorMessage" [class.no-label-margin]="!showLabel" *ngIf="!isValid">{{errorMessage}}</div>
+</div>
+

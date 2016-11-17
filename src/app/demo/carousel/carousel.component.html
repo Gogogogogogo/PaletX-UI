@@ -1,0 +1,36 @@
+<h3>Carousel</h3>
+<div class="carousel-wrapper">
+    <ngb-carousel #c [interval]="interval" [keyboard]="keyboard" [wrap]="wrap">
+        <template ngbSlide [id]="'slide1'">
+            <img src="../../../../public/images/carousel001.jpg" alt="Random first slide">
+            <div class="carousel-caption">
+                <h3>First slide label</h3>
+                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            </div>
+        </template>
+        <template ngbSlide>
+            <img src="../../../../public/images/carousel002.jpg" alt="Random second slide">
+            <div class="carousel-caption">
+                <h3>Second slide label</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </template>
+        <template ngbSlide>
+            <img src="../../../../public/images/carousel003.jpg" alt="Random third slide">
+            <div class="carousel-caption">
+                <h3>Third slide label</h3>
+                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            </div>
+        </template>
+    </ngb-carousel>
+</div>
+
+<br>
+<yk-button [classType]="'success'" (click)="c.prev()">上一张</yk-button>
+<yk-button [classType]="'success'" (click)="c.next()">下一张</yk-button>
+<yk-button [classType]="'success'" (click)="c.pause()">暂停</yk-button>
+<yk-button [classType]="'success'" (click)="c.cycle()">循环</yk-button>
+<yk-button [classType]="'success'" (click)="c.select('slide1')">选择第一张</yk-button>
+<yk-button [classType]="'success'" (click)="changeInterval(1000)">切换时间间隔为1秒</yk-button>
+<yk-button [classType]="'success'" (click)="stopKeyboard()">禁用键盘切换</yk-button>
+<yk-button [classType]="'success'" (click)="stopWrap()">禁止循环播放</yk-button>

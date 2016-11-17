@@ -1,0 +1,21 @@
+<h3>Tooltip</h3>
+<br>
+<br>
+<p>这是一段文字，其中<a role="button" placement="top" ngbTooltip="tooltip在顶部">我</a>有tooltip在顶部</p>
+<p>这是一段文字，其中<a role="button" placement="right" ngbTooltip="tooltip在右边">我</a>有tooltip在右边</p>
+<p>这是一段文字，其中<a role="button" placement="bottom" ngbTooltip="tooltip在底部">我</a>有tooltip在底部</p>
+<p>这是一段文字，其中<a role="button" placement="left" ngbTooltip="tooltip在左边">我</a>有tooltip在左边</p>
+<br>
+<br>
+<br>
+<template #tipContent>Hello, <b>{{name}}</b>!</template>
+<p>这是一段文字，其中<a role="button" placement="top" [ngbTooltip]="tipContent">我</a>有自定义的tooltip</p>
+<p>这是一段文字，其中<a role="button" placement="top" ngbTooltip="点击触发的tooltip" triggers="click:blur">我</a>有点击触发的tooltip</p>
+<br>
+<br>
+<br>
+<p>这是一段文字，其中<a role="button" placement="top" ngbTooltip="从外部触发的tooltip" #t="ngbTooltip" triggers="manual">我</a>有可以从外部触发的tooltip</p>
+<p>当前的tooltip打开状态为：{{t.isOpen()}}</p>
+<yk-button [classType]="'primary'" (click)="t.open()">点击触发tooltip</yk-button>
+<yk-button [classType]="'primary'" (click)="t.close()">点击关闭tooltip</yk-button>
+<yk-button [classType]="'primary'" (click)="t.toggle()">点击切换tooltip</yk-button>

@@ -1,0 +1,47 @@
+<div class="all-wrapper">
+    <label [attr.for]="inputId" 
+           class="form-label"
+           [style.text-align]="labelAlign"
+           [style.width]="labelWidth"
+           *ngIf="label!==undefined">
+        {{label}}
+    </label>
+    <div class="datepicker-wrapper" [style.width]="'inputWidth'">
+        <input class="datepicker-input"
+               placeholder="yyyy-mm-dd"
+               name="dp"
+               [style.width]="inputWidth"
+               [id]="inputId"
+               [(ngModel)]="model"
+               (ngModelChange)="_modelChange($event)"
+               ngbDatepicker
+               [dayTemplate]="customDay"
+               [markDisabled]="isDisabled"
+               [minDate]="minDate"
+               [maxDate]="maxDate"
+               [startDate]="startDate"
+               #d="ngbDatepicker"
+               (click)="d.open()"
+               [showNavigation]="showNavigation"
+               [showWeekdays]="showWeekdays"
+               [showWeekNumbers]="showWeekNumbers"
+        >
+        <div class="datepicker-addon" (click)="d.toggle()" >
+            <i class="fa fa-lg fa-calendar"></i>
+        </div>
+    </div>
+</div>
+
+<template #customDay
+          let-date="date"
+          let-currentMonth="currentMonth"
+          let-selected="selected"
+          let-disabled="disabled">
+  <span class="custom-day"
+        [class.weekend]="isWeekend(date)"
+        [class.bg-primary]="selected"
+        [class.hidden]="date.month !== currentMonth"
+        [class.text-muted]="disabled">
+    {{ date.day }}
+  </span>
+</template>

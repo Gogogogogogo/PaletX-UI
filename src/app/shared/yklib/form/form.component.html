@@ -1,0 +1,14 @@
+<div>
+    <form [formGroup]="form">
+        <div *ngFor="let model of models">
+            <bf-model [model]="model" [showLabel]="showLabel" [form]="form"></bf-model>
+        </div>
+    </form>
+    <div class="foot-button" [class.no-label-margin]="!showLabel">
+        <yk-button [type]="submit"
+                   [classType]="'primary'"
+                   [disabled]="!form.valid"
+                   (click)="onSubmit()">{{btnText}}
+        </yk-button>
+    </div>
+</div>
