@@ -1,7 +1,7 @@
 import { Component, Input, Output, ViewChild, EventEmitter } from '@angular/core';
 
 @Component({
-  selector: 'yk-dropdown',
+  selector: 'px-dropdown',
   templateUrl: './dropdown.component.html',
   styleUrls: ['./dropdown.component.css']
 })

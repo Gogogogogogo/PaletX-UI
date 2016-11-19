@@ -32,6 +32,6 @@ const module = [
   exports: module
 })
 
-export class YkModule {
+export class PXModule {
 
 }

@@ -6,7 +6,7 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: 'yk-checkbox',
+  selector: 'px-checkbox',
   templateUrl: './checkbox.component.html',
   styleUrls: ['./checkbox.component.css']
 })

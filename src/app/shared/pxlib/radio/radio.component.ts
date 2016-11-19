@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'yk-radio',
+  selector: 'px-radio',
   templateUrl: './radio.component.html',
   styleUrls: ['./radio.component.css']
 })

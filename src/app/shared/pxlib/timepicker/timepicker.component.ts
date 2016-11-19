@@ -1,7 +1,7 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
-  selector: 'yk-timepicker',
+  selector: 'px-timepicker',
   templateUrl: './timepicker.component.html',
   styleUrls: ['./timepicker.component.css']
 })

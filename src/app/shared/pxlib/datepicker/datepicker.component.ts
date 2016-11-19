@@ -1,5 +1,7 @@
-import { Component, Input, Output, Injectable, EventEmitter, ViewChild } from '@angular/core';
-import { NgbDatepickerI18n, NgbDateStruct, NgbDatepickerConfig } from '@ng-bootstrap/ng-bootstrap';
+import { Component, Input, Injectable, Output, EventEmitter, ViewChild } from '@angular/core';
+import { NgbDatepickerI18n, NgbDateStruct } from '@ng-bootstrap/ng-bootstrap';
+//noinspection TypeScriptCheckImport
+import { UUID } from 'angular2-uuid';
 
 const I18N_VALUES = {
   en: {
@@ -34,18 +36,17 @@ export class CustomDatepickerI18n extends NgbDatepickerI18n {
 }
 
 @Component({
-  selector: 'yk-datepicker-static',
-  templateUrl: './datepicker-static.component.html',
+  selector: 'px-datepicker',
+  templateUrl: './datepicker.component.html',
   styleUrls: ['./datepicker.component.css'],
   viewProviders: [
-    I18n,
-    {provide: NgbDatepickerI18n, useClass: CustomDatepickerI18n},
-    NgbDatepickerConfig
+    I18n, {provide: NgbDatepickerI18n, useClass: CustomDatepickerI18n}
   ]
 })
 
-export class DatepickerStaticComponent {
-  @ViewChild('dp') dp:any;
+export class DatepickerComponent {
+  @ViewChild('d') dp:any;
+  @Input() label:string;
   @Input() model:any;
   @Input() minDate:any;
   @Input() maxDate:any;
@@ -53,13 +54,22 @@ export class DatepickerStaticComponent {
   @Input() showNavigation:boolean;
   @Input() showWeekdays:boolean;
   @Input() showWeekNumbers:boolean;
+  @Input() labelAlign:string;
+  @Input() labelWidth:string;
+  @Input() inputWidth:string;
   @Output() modelChange = new EventEmitter();
+
+  inputId:string;
 
   constructor(private _i18n:I18n) {
     this._i18n.language = 'zh';
+    this.inputId = 'yk-datepicker' + UUID.UUID();
     this.showNavigation = true;
     this.showWeekdays = true;
     this.showWeekNumbers = false;
+    this.labelAlign = 'right';
+    this.labelWidth = '7rem';
+    this.inputWidth = '20rem';
   }
 
   @Input()
@@ -87,4 +97,17 @@ export class DatepickerStaticComponent {
   navigateTo(date?:any) {
     this.dp.navigateTo(date || null);
   }
+
+  open() {
+    this.dp.open();
+  }
+
+  close() {
+    this.dp.close();
+  }
+
+  toggle() {
+    this.dp.toggle();
+  }
+
 }

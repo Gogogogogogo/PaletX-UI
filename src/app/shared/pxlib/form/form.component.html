@@ -5,10 +5,10 @@
         </div>
     </form>
     <div class="foot-button" [class.no-label-margin]="!showLabel">
-        <yk-button [type]="submit"
+        <px-button [type]="submit"
                    [classType]="'primary'"
                    [disabled]="!form.valid"
                    (click)="onSubmit()">{{btnText}}
-        </yk-button>
+        </px-button>
     </div>
 </div>

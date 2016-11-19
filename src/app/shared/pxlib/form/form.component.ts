@@ -2,10 +2,9 @@ import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 import { FormService } from './form.service';
 import { BaseModel } from './base.model';
 import { FormGroup } from '@angular/forms';
-import { Event } from "@angular/router";
 
 @Component({
-  selector: 'yk-form',
+  selector: 'px-form',
   templateUrl: './form.component.html',
   styleUrls: ['./form.component.css']
 })

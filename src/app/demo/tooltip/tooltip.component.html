@@ -16,6 +16,6 @@
 <br>
 <p>这是一段文字，其中<a role="button" placement="top" ngbTooltip="从外部触发的tooltip" #t="ngbTooltip" triggers="manual">我</a>有可以从外部触发的tooltip</p>
 <p>当前的tooltip打开状态为：{{t.isOpen()}}</p>
-<yk-button [classType]="'primary'" (click)="t.open()">点击触发tooltip</yk-button>
-<yk-button [classType]="'primary'" (click)="t.close()">点击关闭tooltip</yk-button>
-<yk-button [classType]="'primary'" (click)="t.toggle()">点击切换tooltip</yk-button>
+<px-button [classType]="'primary'" (click)="t.open()">点击触发tooltip</px-button>
+<px-button [classType]="'primary'" (click)="t.close()">点击关闭tooltip</px-button>
+<px-button [classType]="'primary'" (click)="t.toggle()">点击切换tooltip</px-button>

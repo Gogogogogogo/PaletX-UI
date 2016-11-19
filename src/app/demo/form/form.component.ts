@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Validators } from '@angular/forms';
-import { BaseModel } from '../../shared/yklib/form/base.model';
-import { SelectModel } from '../../shared/yklib/form/select.model';
-import { TextModel } from '../../shared/yklib/form/text.model';
+import { BaseModel } from '../../shared/pxlib/form/base.model';
+import { SelectModel } from '../../shared/pxlib/form/select.model';
+import { TextModel } from '../../shared/pxlib/form/text.model';
 
 @Component({
   templateUrl: './form.component.html',

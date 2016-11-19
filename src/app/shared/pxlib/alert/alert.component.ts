@@ -1,7 +1,7 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
-  selector: 'yk-alert',
+  selector: 'px-alert',
   templateUrl: './alert.component.html',
   styleUrls: ['./alert.component.css']
 })

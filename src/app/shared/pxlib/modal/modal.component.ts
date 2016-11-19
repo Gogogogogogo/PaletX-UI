@@ -3,7 +3,7 @@ import { Component, Input, Output, EventEmitter, ViewChild } from '@angular/core
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
-  selector: 'yk-modal',
+  selector: 'px-modal',
   templateUrl: './modal.component.html',
   styleUrls: ['./modal.component.css']
 })
