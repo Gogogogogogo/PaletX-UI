@@ -10,7 +10,7 @@
     display: block;
 }
 
-.px-header .logo {
+.px-header .logo-mini {
     background-color: #2c3e50;
     color: #fff;
     display: block;
@@ -18,19 +18,43 @@
     height: 50px;
     font-size: 20px;
     line-height: 50px;
-    text-align: left;
-    width: 200px;
-    padding: 15px 0 15px 20px;
+    text-align: center;
+    width: 100px;
+    padding: 15px 0;
     font-weight: 300;
     overflow: hidden;
 }
 
-.px-header .logo .logo-img {
+.px-header .logo-mini .logo-img {
     height: 20px;
     margin-top: -5px;
 }
 
-.px-header .logo .logo-lg {
+.px-header .logo-lg {
+    background-color: #2c3e50;
+    color: #fff;
+    display: block;
+    float: left;
+    height: 50px;
+    font-size: 20px;
+    line-height: 50px;
+    text-align: center;
+    width: 200px;
+    padding: 15px 0;
+    font-weight: 300;
+    overflow: hidden;
+}
+
+.px-header .logo-lg .logo-img {
+    height: 20px;
+    margin-top: -5px;
+}
+
+.px-header .logo-lg span {
+    display: block;
+}
+
+.px-header .logo-mini span {
     display: block;
 }
 
@@ -54,8 +78,4 @@
 .px-navbar .px-navbar-link:hover {
     color: #f6f6f6;
     background-color: rgba(255, 255, 255, 0.1);
-}
-
-.px-header-logo-collapsed {
-    width: 0 !important;
 }

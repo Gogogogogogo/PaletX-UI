@@ -57,6 +57,26 @@
     width: 0;
 }
 
-.px-is-visible {
+.px-sidebar-is-visible {
     display: block !important;
+}
+
+@media (max-width: 767px) {
+    .px-sidebar-wrapper {
+        width: 100%;
+        display: none;
+    }
+
+    .px-sidebar {
+        width: 100%;
+    }
+}
+
+.px-sidebar-toggle {
+    position: fixed;
+    top: 18px;
+    right: 12px;
+    z-index: 1031;
+    font-size: 14px;
+    color: #fff;
 }
