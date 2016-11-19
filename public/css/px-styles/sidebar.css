@@ -1,0 +1,21 @@
+/*****************************/
+/* px-sidebar
+/****************************/
+.px-sidebar-wrapper {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    top: 50px;
+    z-index: 1030;
+    width: 200px;
+    overflow: hidden;
+}
+
+.px-sidebar {
+    position: relative;
+    background-color: #f9fafc;
+    width: 217px;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
