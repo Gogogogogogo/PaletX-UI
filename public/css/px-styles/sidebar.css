@@ -39,7 +39,7 @@
     padding: 12px 5px 12px 20px;
     display: block;
     color: #444;
-    font-weight: 300;
+    font-weight: 400;
     border-left: 3px solid transparent;
     font-size: 14px;
 }
@@ -47,8 +47,16 @@
 .px-sidebar-menu li:hover a,
 .px-sidebar-menu li.active a {
     color: #000;
-    border-left-color: #2c3e50;
+    border-left-color: #0275d8;
     background: #f4f4f5;
-    font-weight: 600;
+    font-weight: 400;
     text-decoration: none;
+}
+
+.px-sidebar-collapsed {
+    width: 0;
+}
+
+.px-is-visible {
+    display: block !important;
 }

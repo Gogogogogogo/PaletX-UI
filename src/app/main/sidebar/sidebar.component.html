@@ -1,4 +1,5 @@
-<aside class="px-sidebar-wrapper">
+<aside class="px-sidebar-wrapper" [class.px-is-visible]="isVisible"
+       [class.px-sidebar-collapsed]="isCollapsed">
   <div class="px-sidebar">
     <ul class="px-sidebar-menu">
       <li routerLinkActive="active">
