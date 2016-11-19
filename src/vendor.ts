@@ -12,3 +12,4 @@ import 'rxjs';
 import '../public/css/bootstrap.min.css';
 import '../public/css/font-awesome.min.css';
 import '../public/css/px-styles.css';
+import '../public/css/px-styles/index.css';

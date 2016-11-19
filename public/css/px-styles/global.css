@@ -1,0 +1,20 @@
+/*****************************/
+/* global
+/****************************/
+body {
+    color: #333;
+    font-size: 12px;
+    background-color: #fff;
+}
+
+body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, span, p, button, input, optgroup, select, textarea, label, a, pre, .tooltip, .popover {
+    font-family: "Helvetica Neue", "Luxi Sans", "DejaVu Sans", Tahoma, "Hiragino Sans GB", STHeiti, "Microsoft YaHei", sans-serif !important;
+}
+
+body, span {
+    line-height: 1 !important;
+}
+
+a:hover {
+    text-decoration: none;
+}
