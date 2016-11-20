@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'yk-sidebar',
+  selector: 'px-sidebar',
   templateUrl: './sidebar.component.html'
 })
 
