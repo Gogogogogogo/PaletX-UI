@@ -32,8 +32,7 @@ const routes = [
     component: FullComponent,
     children: [
       {
-        path: '',
-        redirectTo: 'components'
+        path: ''
       },
       {
         path: 'components',

@@ -10,13 +10,15 @@ import { HttpService } from '../util/http.service';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { SidebarComponentsComponent } from './sidebar/sidebar-components/sidebar-components.component';
+import { SidebarCssComponent } from './sidebar/sidebar-css/sidebar-css.component';
 
 @NgModule({
   declarations: [
     FullComponent,
     NavbarComponent,
     SidebarComponent,
-    SidebarComponentsComponent
+    SidebarComponentsComponent,
+    SidebarCssComponent
   ],
   imports: [
     SharedModule,
