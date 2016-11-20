@@ -1,6 +1,6 @@
 <px-navbar (collapse)="collapse($event)"></px-navbar>
 <yk-sidebar [isCollapsed]="isCollapsed"></yk-sidebar>
-<div class="px-content" [class.sidebar-collapsed]="isCollapsed">
+<div class="px-content" [class.px-sidebar-collapsed-content]="isCollapsed">
     <router-outlet></router-outlet>
 </div>
 <template ngbModalContainer></template>
