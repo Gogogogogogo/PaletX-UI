@@ -1,5 +1,5 @@
-<px-navbar (collapse)="collapse($event)"></px-navbar>
-<px-sidebar [isCollapsed]="isCollapsed"></px-sidebar>
+<px-navbar (collapse)="collapse($event)" (switchSidebar)="switch($event)"></px-navbar>
+<px-sidebar [isCollapsed]="isCollapsed" [switchSidebar]="switchSidebar"></px-sidebar>
 <div class="px-content" [class.px-sidebar-collapsed-content]="isCollapsed">
     <router-outlet></router-outlet>
 </div>

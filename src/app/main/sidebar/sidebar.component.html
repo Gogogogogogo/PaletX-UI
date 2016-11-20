@@ -1,7 +1,7 @@
 <aside class="px-sidebar-wrapper" [class.px-sidebar-is-visible]="isVisible"
        [class.px-sidebar-collapsed]="isCollapsed">
   <div class="px-sidebar">
-    <px-sidebar-components></px-sidebar-components>
+    <px-sidebar-components *ngIf="switchSidebar === 'components'"></px-sidebar-components>
   </div>
 </aside>
 
