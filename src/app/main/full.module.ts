@@ -12,6 +12,7 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { SidebarComponentsComponent } from './sidebar/sidebar-components/sidebar-components.component';
 import { SidebarCssComponent } from './sidebar/sidebar-css/sidebar-css.component';
 import { CssModule } from '../css/css.module';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { CssModule } from '../css/css.module';
     NavbarComponent,
     SidebarComponent,
     SidebarComponentsComponent,
-    SidebarCssComponent
+    SidebarCssComponent,
+    HomeComponent
   ],
   imports: [
     SharedModule,

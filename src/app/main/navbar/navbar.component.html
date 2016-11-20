@@ -1,11 +1,11 @@
 <header class="px-header">
-  <a role="button" class="logo-mini hidden-md-up" routerLink="/main">
+  <a role="button" class="logo-mini hidden-md-up" (click)="switch('home')" routerLink="/main">
     <span>
       <img class="logo-img" src="../../../../public/images/PaletX-logo.png">
       <b>PX</b>
     </span>
   </a>
-  <a role="button" class="logo-lg hidden-sm-down" routerLink="/main">
+  <a role="button" class="logo-lg hidden-sm-down" (click)="switch('home')" routerLink="/main">
     <span>
       <img class="logo-img" src="../../../../public/images/PaletX-logo.png">
       <b>PaletX</b> UI
@@ -13,7 +13,8 @@
   </a>
 
   <nav class="px-navbar">
-    <a class="px-navbar-link hidden-sm-down" role="button" (click)="collapseSidebar($event)">
+    <a class="px-navbar-link hidden-sm-down"
+       role="button" (click)="collapseSidebar($event)" *ngIf="switchValue !== 'home'">
       <i class="fa fa-bars fa-fw"></i>
     </a>
     <a class="px-navbar-link" role="button">

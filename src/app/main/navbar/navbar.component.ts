@@ -9,6 +9,7 @@ export class NavbarComponent {
 
   @Output() collapse = new EventEmitter();
   @Output() switchSidebar = new EventEmitter();
+  switchValue:string = 'home';
   isCollapsed:boolean = false;
 
   collapseSidebar(e:any) {
@@ -17,6 +18,7 @@ export class NavbarComponent {
   }
 
   switch(value:string) {
+    this.switchValue = value;
     this.switchSidebar.emit(value);
   }
 }

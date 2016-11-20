@@ -1,11 +1,12 @@
-<aside class="px-sidebar-wrapper" [class.px-sidebar-is-visible]="isVisible"
-       [class.px-sidebar-collapsed]="isCollapsed">
+<aside class="px-sidebar-wrapper"
+       [class.px-sidebar-is-visible]="isVisible"
+       [class.px-sidebar-collapsed]="isCollapsed" *ngIf="switchSidebar !== 'home'">
   <div class="px-sidebar">
     <px-sidebar-components *ngIf="switchSidebar === 'components'"></px-sidebar-components>
     <px-sidebar-css *ngIf="switchSidebar === 'css'"></px-sidebar-css>
   </div>
 </aside>
 
-<div class="px-sidebar-toggle hidden-md-up">
+<div class="px-sidebar-toggle hidden-md-up" *ngIf="switchSidebar !== 'home'">
   <a role="button" (click)="isVisible = !isVisible"><i class="fa fa-bars"></i></a>
 </div>

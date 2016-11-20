@@ -22,6 +22,7 @@ import { CollapseComponent } from '../demo/collapse/collapse.component';
 import { BoxComponent } from '../demo/box/box.component';
 import { CssComponent } from '../css/css.component';
 import { OverviewComponent } from '../css/overview/overview.component';
+import { HomeComponent } from './home/home.component';
 
 const routes = [
   {
@@ -34,7 +35,8 @@ const routes = [
     component: FullComponent,
     children: [
       {
-        path: ''
+        path: '',
+        component: HomeComponent
       },
       {
         path: 'components',
