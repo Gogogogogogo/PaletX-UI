@@ -1,10 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CssComponent } from './css.component';
 import { SharedModule } from '../shared/shared.module';
+import { OverviewComponent } from './overview/overview.component';
 
 @NgModule({
   declarations: [
-    CssComponent
+    CssComponent,
+    OverviewComponent
   ],
   imports: [
     SharedModule

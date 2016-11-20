@@ -73,11 +73,9 @@
     float: left;
     font-size: 14px;
     padding: 18px 14px;
-    text-decoration: none;
 }
 
 .px-navbar .px-navbar-link:hover {
     color: #f6f6f6;
     background-color: rgba(255, 255, 255, 0.1);
-    text-decoration: none;
 }

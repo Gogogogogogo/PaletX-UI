@@ -21,6 +21,7 @@ import { CarouselComponent } from '../demo/carousel/carousel.component';
 import { CollapseComponent } from '../demo/collapse/collapse.component';
 import { BoxComponent } from '../demo/box/box.component';
 import { CssComponent } from '../css/css.component';
+import { OverviewComponent } from '../css/overview/overview.component';
 
 const routes = [
   {
@@ -119,7 +120,17 @@ const routes = [
       },
       {
         path: 'css',
-        component: CssComponent
+        component: CssComponent,
+        children: [
+          {
+            path: '',
+            redirectTo: 'overview'
+          },
+          {
+            path: 'overview',
+            component: OverviewComponent
+          }
+        ]
       }
     ]
   }
