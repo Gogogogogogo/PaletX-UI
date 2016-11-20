@@ -50,9 +50,6 @@ import { BoxComponent } from './box/box.component';
   ],
   providers: [
     TableService
-  ],
-  exports: [
-    DemoComponent
   ]
 })
 

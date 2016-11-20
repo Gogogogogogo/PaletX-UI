@@ -11,6 +11,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { SidebarComponentsComponent } from './sidebar/sidebar-components/sidebar-components.component';
 import { SidebarCssComponent } from './sidebar/sidebar-css/sidebar-css.component';
+import { CssModule } from '../css/css.module';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { SidebarCssComponent } from './sidebar/sidebar-css/sidebar-css.component
     SharedModule,
     NgbModule.forRoot(),
     FullRoutingModule,
-    DemoModule
+    DemoModule,
+    CssModule
   ],
   providers: [
     HttpService

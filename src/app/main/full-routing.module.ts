@@ -20,6 +20,7 @@ import { BreadcrumbComponent } from '../demo/breadcrumb/breadcrumb.component';
 import { CarouselComponent } from '../demo/carousel/carousel.component';
 import { CollapseComponent } from '../demo/collapse/collapse.component';
 import { BoxComponent } from '../demo/box/box.component';
+import { CssComponent } from '../css/css.component';
 
 const routes = [
   {
@@ -115,6 +116,10 @@ const routes = [
             component: BoxComponent
           }
         ]
+      },
+      {
+        path: 'css',
+        component: CssComponent
       }
     ]
   }
