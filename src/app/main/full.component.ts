@@ -1,8 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  templateUrl: './full.component.html',
-  styleUrls: ['./full.component.css']
+  templateUrl: './full.component.html'
 })
 
 export class FullComponent {
