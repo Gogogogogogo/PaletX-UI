@@ -44,6 +44,10 @@
     font-size: 14px;
 }
 
+.px-sidebar-menu li a .fa {
+    width: 20px;
+}
+
 .px-sidebar-menu li:hover a,
 .px-sidebar-menu li.active a {
     color: #000;
