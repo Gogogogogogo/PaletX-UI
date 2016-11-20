@@ -33,10 +33,10 @@ const routes = [
     children: [
       {
         path: '',
-        redirectTo: 'demo'
+        redirectTo: 'components'
       },
       {
-        path: 'demo',
+        path: 'components',
         component: DemoComponent,
         children: [
           {
