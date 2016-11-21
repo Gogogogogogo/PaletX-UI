@@ -25,11 +25,13 @@ module.exports = {
                 loader: 'html'
             },
             {
-                test: /\.(png|jpe?g|gif|ico)$/,
+                test: /\.(png|jpe?g|gif|ico|svg)$/,
+                include: helpers.root('public', 'images'),
                 loader: 'file?name=public/images/[name].[hash].[ext]'
             },
             {
                 test: /\.(svg|woff|woff2|ttf|eot)$/,
+                include: helpers.root('public', 'fonts'),
                 loader: 'file?name=public/fonts/[name].[hash].[ext]'
             },
             {
@@ -52,7 +54,7 @@ module.exports = {
 
         new HtmlWebpackPlugin({
             template: 'src/index.html'/*,
-            favicon:　'src/venus.png'*/
+             favicon:　'src/venus.png'*/
         })
     ]
 };
