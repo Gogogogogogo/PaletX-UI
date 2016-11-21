@@ -8,7 +8,7 @@ import { tableDatas } from './datas';
 })
 
 export class TableComponent implements OnInit {
-  @ViewChild('ykTable') ykTable:any;
+  @ViewChild('pxTable') pxTable:any;
   selections:string;
   columns:any[] = [
     {title: '姓名', field: 'name'},
@@ -39,6 +39,6 @@ export class TableComponent implements OnInit {
   }
 
   getSelections() {
-    this.selections = JSON.stringify(this.ykTable.getSelections());
+    this.selections = JSON.stringify(this.pxTable.getSelections());
   }
 }
