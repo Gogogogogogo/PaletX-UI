@@ -21,6 +21,15 @@
     padding: 0 15px;
 }
 
+.px-banner-logo {
+    margin: 0 auto 20px;
+    display: block;
+}
+
+.px-banner-logo img {
+    height: 100px;
+}
+
 .px-banner-title {
     font-size: 96px;
     color: #fff;
