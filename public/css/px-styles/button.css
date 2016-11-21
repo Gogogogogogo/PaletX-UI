@@ -33,3 +33,21 @@
     background-color: #009ceb;
     border-color: #009ceb;
 }
+
+.px-btn-default {
+    color: #00abff;
+    background-color: #fff;
+    border-color: #eee;
+}
+
+.px-btn-default:hover {
+    color: #00abff;
+    border-color: #eee;
+    background-color: #fcfcfc;
+}
+
+.px-btn-default:focus {
+    color: #fff;
+    border-color: #00abff;
+    background-color: #00abff;
+}
