@@ -23,6 +23,7 @@ import { BoxComponent } from '../demo/box/box.component';
 import { CssComponent } from '../css/css.component';
 import { OverviewComponent } from '../css/overview/overview.component';
 import { HomeComponent } from './home/home.component';
+import { CssButtonComponent } from '../css/button/css-button.component';
 
 const routes = [
   {
@@ -131,6 +132,10 @@ const routes = [
           {
             path: 'overview',
             component: OverviewComponent
+          },
+          {
+            path: 'button',
+            component: CssButtonComponent
           }
         ]
       }

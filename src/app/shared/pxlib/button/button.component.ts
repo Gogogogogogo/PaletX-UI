@@ -2,8 +2,7 @@ import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'px-button',
-  templateUrl: './button.component.html',
-  styleUrls: ['./button.component.css']
+  templateUrl: './button.component.html'
 })
 
 export class ButtonComponent {
@@ -18,7 +17,7 @@ export class ButtonComponent {
   }
 
   setClass() {
-    return 'btn btn-' + this.classType;
+    return 'btn px-btn px-btn-' + this.classType;
   }
 
   setIClass() {

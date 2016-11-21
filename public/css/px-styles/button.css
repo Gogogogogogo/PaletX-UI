@@ -1,0 +1,35 @@
+/*****************************/
+/* bootstrap cover css
+/****************************/
+.px-btn {
+    font-weight: normal;
+    font-size: 14px;
+    padding: 0 12px;
+    min-width: 100px;
+    height: 36px;
+    line-height: 1;
+    border-radius: 3px;
+    outline: none;
+}
+
+.px-btn i {
+    padding: 0 12px 0 0;
+}
+
+.px-btn-primary {
+    color: #fff;
+    background-color: #00abff;
+    border-color: #00abff;
+}
+
+.px-btn-primary:hover {
+    color: #fff;
+    background-color: #00a3f5;
+    border-color: #00a3f5;
+}
+
+.px-btn-primary:focus {
+    color: #fff;
+    background-color: #009ceb;
+    border-color: #009ceb;
+}
