@@ -2,7 +2,7 @@
 /* global
 /****************************/
 body {
-    color: #333;
+    color: #4d5761;
     font-size: 12px;
     background-color: #fff;
 }
@@ -11,8 +11,12 @@ body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, span, p, button, inp
     font-family: "Helvetica Neue", "Luxi Sans", "DejaVu Sans", Tahoma, "Hiragino Sans GB", STHeiti, "Microsoft YaHei", sans-serif !important;
 }
 
-body, span {
+body, span, h1, h2, h3, h4, h5, h6 {
     line-height: 1 !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 !important;
 }
 
 a:hover, a:focus {
