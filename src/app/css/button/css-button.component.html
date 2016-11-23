@@ -17,5 +17,26 @@
     </code>
   </pre>
   <p>多个操作</p>
-  <button class="btn px-btn px-btn-default px-btn-more">更多操作<i class="fa fa-caret-down"></i></button>
+  <div ngbDropdown>
+    <button class="btn px-btn px-btn-default px-btn-more" ngbDropdownToggle>更多操作</button>
+    <div class="px-btn-more-dropdown-menu dropdown-menu">
+      <button class="btn px-btn px-btn-default">操作1</button>
+      <button class="btn px-btn px-btn-default">操作2</button>
+      <button class="btn px-btn px-btn-default">操作3</button>
+    </div>
+  </div>
+  <div class="h-20"></div>
+  <p>代码示例</p>
+  <pre class="px-pre">
+    <code class="px-code">
+      &lt;div ngbDropdown>
+        &lt;button class="btn px-btn px-btn-default px-btn-more" ngbDropdownToggle>更多操作&lt;/button>
+        &lt;div class="px-btn-more-dropdown-menu dropdown-menu">
+          &lt;button class="btn px-btn px-btn-default">操作1&lt;/button>
+          &lt;button class="btn px-btn px-btn-default">操作2&lt;/button>
+          &lt;button class="btn px-btn px-btn-default">操作3&lt;/button>
+        &lt;/div>
+      &lt;/div>
+    </code>
+  </pre>
 </section>

@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CssComponent } from './css.component';
 import { SharedModule } from '../shared/shared.module';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { OverviewComponent } from './overview/overview.component';
 import { CssButtonComponent } from './button/css-button.component';
 
@@ -11,7 +12,8 @@ import { CssButtonComponent } from './button/css-button.component';
     CssButtonComponent
   ],
   imports: [
-    SharedModule
+    SharedModule,
+    NgbModule.forRoot()
   ]
 })
 

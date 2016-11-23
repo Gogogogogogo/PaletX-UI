@@ -52,7 +52,28 @@
     background-color: #00abff;
 }
 
-.px-btn-more i {
-    font-size: 12px;
-    padding-left: 8px;
+.px-btn-more:focus {
+    color: #00abff;
+    border-color: #eee;
+    background-color: #fcfcfc;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.px-btn-more-dropdown-menu {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+.px-btn-more-dropdown-menu button {
+    border-top: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    display: block;
+}
+
+.px-btn-more-dropdown-menu button:not(:last-child) {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
 }
