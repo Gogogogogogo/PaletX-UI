@@ -10,8 +10,8 @@
     <li class="breadcrumb-item">面包屑导航</li>
   </ol>
   <div class="h-20"></div>
-  <p>代码示例</p>
-  <pre class="px-pre">
+  <p><a role="button"(click)="isCollapse = !isCollapse">代码示例 <i class="fa fa-plus"></i></a></p>
+  <pre class="px-pre" [ngbCollapse]="isCollapse">
     <code class="px-code">
       &lt;ol class="breadcrumb">
         &lt;li class="breadcrumb-item">&lt;a role="button" routerLink="/main/css">概览&lt;/a>&lt;/li>
