@@ -26,3 +26,7 @@ a:hover, a:focus {
 button:focus {
     outline: none !important;
 }
+
+.h-20 {
+    height: 20px;
+}

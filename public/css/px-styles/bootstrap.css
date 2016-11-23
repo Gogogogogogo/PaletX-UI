@@ -5,3 +5,7 @@
     margin-left: 0;
     margin-right: 0;
 }
+
+.btn.disabled, .btn:disabled {
+    opacity: .5;
+}

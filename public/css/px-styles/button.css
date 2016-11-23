@@ -51,3 +51,8 @@
     border-color: #00abff;
     background-color: #00abff;
 }
+
+.px-btn-more i {
+    font-size: 12px;
+    padding-left: 8px;
+}
