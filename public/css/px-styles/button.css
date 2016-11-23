@@ -169,3 +169,17 @@
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
 }
+
+.px-btn-cancel {
+    border: 1px solid #eeeeee;
+    background-color: #fff;
+    color: #00abff;
+}
+
+.px-btn-cancel:hover {
+    background-color: #fcfcfc;
+}
+
+.px-btn-cancel:focus {
+    background-color: #f8f8f8;
+}
