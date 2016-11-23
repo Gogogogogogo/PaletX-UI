@@ -80,19 +80,31 @@
 
 .px-btn-success {
     color: #fff;
-    padding-left: 32px;
     border-color: #73cf22;
-    background: #73cf22 url("../../images/btn_icon_create.png") no-repeat 10px 10px;
+    background: #73cf22;
+}
+
+.px-btn-success.create {
+    padding-left: 32px;
+    background:#73cf22 url("../../images/btn_icon_create.png") no-repeat 10px 10px;
 }
 
 .px-btn-success:hover {
     color: #fff;
-    background: #6cc41f url("../../images/btn_icon_create.png") no-repeat 10px 10px;
+    background: #6cc41f;
     border-color: #6cc41f;
+}
+
+.px-btn-success.create:hover {
+    background:#6cc41f url("../../images/btn_icon_create.png") no-repeat 10px 10px;
 }
 
 .px-btn-success:focus {
     color: #fff;
-    background: #67ba1e url("../../images/btn_icon_create.png") no-repeat 10px 10px;
+    background: #67ba1e;
     border-color: #67ba1e;
+}
+
+.px-btn-success.create:focus {
+    background:#67ba1e url("../../images/btn_icon_create.png") no-repeat 10px 10px;
 }
