@@ -1,0 +1,21 @@
+.breadcrumb {
+    padding: 12px 0 0 0;
+    background: none;
+}
+
+.breadcrumb > li + li:before {
+    padding-left: 6px;
+    padding-right: 3px;
+    content: ">\00a0";
+    color: #bbbbbb;
+}
+
+.breadcrumb > li {
+    color: #7c868d;
+}
+
+.breadcrumb a,
+.breadcrumb a:hover,
+.breadcrumb a:focus {
+    color: #3fb4ff;
+}
