@@ -18,8 +18,8 @@
   </pre>
   <p>多个操作</p>
   <div ngbDropdown>
-    <button class="btn px-btn px-btn-default px-btn-more" ngbDropdownToggle>更多操作</button>
-    <div class="px-btn-more-dropdown-menu dropdown-menu">
+    <button class="btn px-btn px-btn-default px-btn-default-more" ngbDropdownToggle>更多操作</button>
+    <div class="px-btn-default-more-dropdown-menu dropdown-menu">
       <button class="btn px-btn px-btn-default">操作1</button>
       <button class="btn px-btn px-btn-default">操作2</button>
       <button class="btn px-btn px-btn-default">操作3</button>
@@ -30,8 +30,8 @@
   <pre class="px-pre">
     <code class="px-code">
       &lt;div ngbDropdown>
-        &lt;button class="btn px-btn px-btn-default px-btn-more" ngbDropdownToggle>更多操作&lt;/button>
-        &lt;div class="px-btn-more-dropdown-menu dropdown-menu">
+        &lt;button class="btn px-btn px-btn-default px-btn-default-more" ngbDropdownToggle>更多操作&lt;/button>
+        &lt;div class="px-btn-default-more-dropdown-menu dropdown-menu">
           &lt;button class="btn px-btn px-btn-default">操作1&lt;/button>
           &lt;button class="btn px-btn px-btn-default">操作2&lt;/button>
           &lt;button class="btn px-btn px-btn-default">操作3&lt;/button>
@@ -51,4 +51,25 @@
     </code>
   </pre>
   <h2>场景三：表格按钮</h2>
+  <p>单个操作</p>
+  <button class="btn px-btn px-btn-operate">编辑</button>
+  <button class="btn px-btn px-btn-operate" disabled>编辑</button>
+  <div class="h-20"></div>
+  <p>代码示例</p>
+  <pre class="px-pre">
+    <code class="px-code">
+      &lt;button class="btn px-btn px-btn-operate">编辑&lt;/button>
+      &lt;button class="btn px-btn px-btn-operate" disabled>编辑&lt;/button>
+    </code>
+  </pre>
+  <p>多个操作</p>
+  <div ngbDropdown>
+    <button class="btn px-btn px-btn-operate px-btn-operate-more">编辑</button>
+    <button class="btn px-btn px-btn-operate-more-dropdown-toggle" ngbDropdownToggle></button>
+    <div class="px-btn-operate-more-dropdown-menu dropdown-menu">
+      <button class="btn px-btn px-btn-operate">下载</button>
+      <button class="btn px-btn px-btn-operate">删除</button>
+      <button class="btn px-btn px-btn-operate">其他</button>
+    </div>
+  </div>
 </section>
