@@ -1,0 +1,16 @@
+/*****************************/
+/* alert
+/****************************/
+.px-alert {
+    width: 600px;
+    height: 40px;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 3px;
+    text-align: center;
+    padding: 13px 0;
+}
+
+.px-alert-success {
+    background-color: #73cf22;
+}
