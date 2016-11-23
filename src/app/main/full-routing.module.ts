@@ -21,10 +21,10 @@ import { CarouselComponent } from '../demo/carousel/carousel.component';
 import { CollapseComponent } from '../demo/collapse/collapse.component';
 import { BoxComponent } from '../demo/box/box.component';
 import { CssComponent } from '../css/css.component';
-import { OverviewComponent } from '../css/overview/overview.component';
 import { HomeComponent } from './home/home.component';
 import { CssButtonComponent } from '../css/button/css-button.component';
 import { CssBreadcrumbComponent } from '../css/breadcrumb/css-breadcrumb.component';
+import { CssAlertComponent } from '../css/alert/css-alert.component';
 
 const routes = [
   {
@@ -128,11 +128,7 @@ const routes = [
         children: [
           {
             path: '',
-            redirectTo: 'overview'
-          },
-          {
-            path: 'overview',
-            component: OverviewComponent
+            redirectTo: 'alert'
           },
           {
             path: 'button',
@@ -141,6 +137,10 @@ const routes = [
           {
             path: 'breadcrumb',
             component: CssBreadcrumbComponent
+          },
+          {
+            path: 'alert',
+            component: CssAlertComponent
           }
         ]
       }
