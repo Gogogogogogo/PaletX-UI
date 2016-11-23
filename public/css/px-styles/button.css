@@ -126,7 +126,7 @@
 }
 
 .px-btn-operate-more {
-    min-width: 60px;
+    min-width: 55px;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
 }
@@ -144,9 +144,14 @@
     background: #fff;
     height: 100%;
     min-width: 20px;
-    width: 20px;
+    width: 25px;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
+}
+
+.px-btn-operate-more-dropdown-toggle:hover,
+.px-btn-operate-more-dropdown-toggle:focus {
+    background-color: #fcfcfc;
 }
 
 .px-btn-operate-more-dropdown-toggle:after {
