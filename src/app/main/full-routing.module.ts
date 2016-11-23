@@ -24,6 +24,7 @@ import { CssComponent } from '../css/css.component';
 import { OverviewComponent } from '../css/overview/overview.component';
 import { HomeComponent } from './home/home.component';
 import { CssButtonComponent } from '../css/button/css-button.component';
+import { CssBreadcrumbComponent } from '../css/breadcrumb/css-breadcrumb.component';
 
 const routes = [
   {
@@ -136,6 +137,10 @@ const routes = [
           {
             path: 'button',
             component: CssButtonComponent
+          },
+          {
+            path: 'breadcrumb',
+            component: CssBreadcrumbComponent
           }
         ]
       }
