@@ -77,3 +77,22 @@
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
 }
+
+.px-btn-success {
+    color: #fff;
+    padding-left: 32px;
+    border-color: #73cf22;
+    background: #73cf22 url("../../images/btn_icon_create.png") no-repeat 10px 10px;
+}
+
+.px-btn-success:hover {
+    color: #fff;
+    background: #6cc41f url("../../images/btn_icon_create.png") no-repeat 10px 10px;
+    border-color: #6cc41f;
+}
+
+.px-btn-success:focus {
+    color: #fff;
+    background: #67ba1e url("../../images/btn_icon_create.png") no-repeat 10px 10px;
+    border-color: #67ba1e;
+}
