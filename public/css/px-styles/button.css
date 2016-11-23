@@ -183,3 +183,21 @@
 .px-btn-cancel:focus {
     background-color: #f8f8f8;
 }
+
+.px-btn-delete {
+    color: #fff;
+    background-color: #ff5b55;
+    border-color: #ff5b55;
+}
+
+.px-btn-delete:hover {
+    color: #fff;
+    background-color: #f55651;
+    border-color: #f55651;
+}
+
+.px-btn-delete:focus {
+    color: #fff;
+    background-color: #eb534d;
+    border-color: #eb534d;
+}
