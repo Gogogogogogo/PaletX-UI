@@ -68,3 +68,13 @@
     word-break: break-all;
     word-wrap: break-word;
 }
+
+.a-btn-code-example {
+    color: #7c868d;
+    font-size: 12px;
+}
+
+.a-btn-code-example:hover,
+.a-btn-code-example:focus {
+    color: #00abff;
+}
