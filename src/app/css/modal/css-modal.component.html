@@ -2,3 +2,23 @@
   <h1>模态框-Modal</h1>
   <small>模态框提供两种不同的场景</small>
 </section>
+
+<section class="px-content">
+  <h2>场景一：操作模态框</h2>
+  <button class="btn px-btn px-btn-primary" (click)="open1()">打开操作模态框</button>
+  <template #modal1_template>
+    <div class="px-modal-header">
+      <h4>模态框标题</h4>
+      <a role="button" (click)="modal1.close()">
+
+      </a>
+    </div>
+    <div class="px-modal-body">
+      test
+    </div>
+    <div class="px-modal-footer">
+      <button class="btn px-btn px-btn-primary">确认</button>
+      <button class="btn px-btn px-btn-cancel" (click)="modal1.close()">关闭</button>
+    </div>
+  </template>
+</section>

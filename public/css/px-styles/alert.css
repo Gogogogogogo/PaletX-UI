@@ -36,6 +36,7 @@
     background-image: url("../../../public/images/alert_btn_close.png");
 }
 
-.px-alert-close:hover {
+.px-alert-close:hover,
+.px-alert-close:focus {
     background-image: url("../../../public/images/alert_btn_close_hover.png");
 }

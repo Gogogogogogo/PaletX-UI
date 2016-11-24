@@ -1,0 +1,29 @@
+/*****************************/
+/* modal
+/****************************/
+.modal-dialog {
+    margin-top: 100px;
+}
+
+.modal-content {
+    min-height: 310px;
+    border: 0;
+    padding: 30px;
+}
+
+.px-modal-header h4 {
+    font-size: 24px;
+    color: #4d5761;
+}
+
+.px-modal-header a {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-image: url("../../images/modal_btn_close.png");
+}
+
+.px-modal-header a:hover,
+.px-modal-header a:focus {
+    background-image: url("../../images/modal_btn_close_hover.png");
+}
