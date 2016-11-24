@@ -1,0 +1,27 @@
+/*****************************/
+/* input
+/****************************/
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder,
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+    color: #c2c6c9;
+}
+
+.px-input {
+    outline: none;
+    height: 36px;
+    border-radius: 2px;
+    border: 1px solid #ddd;
+    padding: 0 10px;
+    font-size: 14px;
+    color: #4d5761;
+}
+
+.px-input.lg {
+    width: 400px;
+}
+
+.px-input:focus {
+    border: 1px solid #3fb3ff;
+}
