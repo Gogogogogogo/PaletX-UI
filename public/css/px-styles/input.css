@@ -92,3 +92,8 @@ textarea:-moz-placeholder {
 .px-input.addon.ng-invalid + span.addon {
     border-color: #ff5b55;
 }
+
+.px-input-wrapper i.link {
+    color: #ddd;
+    padding: 0 2px 0 0;
+}
