@@ -54,10 +54,21 @@ textarea:-moz-placeholder {
     color: #ff5b55;
 }
 
-.px-input.lg.addon {
-    width: 360px;
+.px-input.addon {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
+}
+
+.px-input.lg.addon {
+    width: 360px;
+}
+
+.px-input.sm.addon {
+    width: 150px;
+}
+
+.px-input.sm.addon + span.addon {
+    margin-right: 210px;
 }
 
 .px-input-wrapper span.addon {
