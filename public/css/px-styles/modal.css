@@ -44,7 +44,12 @@
 }
 
 .px-modal-confirm {
-    padding-top: 50px;
+    padding-top: 30px;
+}
+
+.px-modal-confirm img {
+    width: 60px;
+    height: 60px;
 }
 
 .px-modal-confirm h5 {

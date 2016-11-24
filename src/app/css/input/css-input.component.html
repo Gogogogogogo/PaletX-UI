@@ -15,6 +15,7 @@
       &lt;input class="px-input sm" placeholder="小尺寸">
     </code>
   </pre>
+
   <h2>场景二：禁用的</h2>
   <input class="px-input lg" placeholder="禁用的" disabled>
   <input class="px-input sm" placeholder="禁用的" disabled>
@@ -26,4 +27,26 @@
       &lt;input class="px-input sm" placeholder="禁用的">
     </code>
   </pre>
+
+  <h2>场景三：带有说明文字的</h2>
+  <div class="px-input-wrapper">
+    <input class="px-input lg" placeholder="带有说明文字的">
+    <span>内容说明：只能包含字母、数字及下划线</span>
+  </div>
+  <div class="h-20"></div>
+  <p><a role="button" class="a-btn-code-example" (click)="isCollapse3 = !isCollapse3">代码示例 <i class="fa fa-plus"></i></a></p>
+  <pre class="px-pre" [ngbCollapse]="isCollapse3">
+    <code class="px-code">
+      &lt;div class="px-input-wrapper">
+        &lt;input class="px-input lg" placeholder="带有说明文字的">
+        &lt;span>内容说明：只能包含字母、数字及下划线&lt;/span>
+      &lt;/div>
+    </code>
+  </pre>
+
+  <h2>场景四：带有校验的</h2>
+  <div class="px-input-wrapper">
+    <input class="px-input lg" placeholder="带有校验的" required>
+    <span class="validation">输入不能为空</span>
+  </div>
 </section>
