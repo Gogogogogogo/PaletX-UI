@@ -4,11 +4,11 @@
 </section>
 
 <section class="px-content">
-  <h2>场景一：操作模态框</h2>
+  <h2>场景一：提交模态框</h2>
   <button class="btn px-btn px-btn-primary" (click)="open1()">打开操作模态框</button>
   <template #modal1_template>
     <div class="px-modal-header">
-      <h4>模态框标题</h4>
+      <h4>确认</h4>
       <a role="button" (click)="modal1.close()"></a>
     </div>
     <div class="px-modal-body">
@@ -62,4 +62,62 @@
       }
     </code>
   </pre>
+
+  <h2>场景二：删除模态框</h2>
+  <button class="btn px-btn px-btn-delete" (click)="open2()">打开删除模态框</button>
+  <template #modal2_template>
+    <div class="px-modal-header">
+      <h4>删除</h4>
+      <a role="button" (click)="modal2.close()"></a>
+    </div>
+    <div class="px-modal-body">
+      <div class="px-modal-confirm">
+        <img src="../../../../public/images/modal_confirm.png">
+        <h5>确认删除数据吗？</h5>
+        <small>删除后数据将丢失，不可恢复</small>
+      </div>
+    </div>
+    <div class="px-modal-footer">
+      <button class="btn px-btn px-btn-delete">删除</button>
+      <button class="btn px-btn px-btn-cancel" (click)="modal2.close()">关闭</button>
+    </div>
+  </template>
+  <div class="h-20"></div>
+  <p><a role="button" class="a-btn-code-example" (click)="isCollapse2 = !isCollapse2">代码示例 <i class="fa fa-plus"></i></a></p>
+  <pre class="px-pre" [ngbCollapse]="isCollapse2">
+    <code class="px-code">
+      //html
+      &lt;button class="btn px-btn px-btn-delete" (click)="open2()">打开删除模态框&lt;/button>
+      &lt;template #modal2_template>
+        &lt;div class="px-modal-header">
+          &lt;h4>删除&lt;/h4>
+          &lt;a role="button" (click)="modal2.close()">&lt;/a>
+        &lt;/div>
+        &lt;div class="px-modal-body">
+          &lt;div class="px-modal-confirm">
+            &lt;img src="../../../../public/images/modal_confirm.png">
+            &lt;h5>确认删除数据吗？&lt;/h5>
+            &lt;small>删除后数据将丢失，不可恢复&lt;/small>
+          &lt;/div>
+        &lt;/div>
+        &lt;div class="px-modal-footer">
+          &lt;button class="btn px-btn px-btn-delete">删除&lt;/button>
+          &lt;button class="btn px-btn px-btn-cancel" (click)="modal2.close()">关闭&lt;/button>
+        &lt;/div>
+      &lt;/template>
+
+      //typescript
+      @ViewChild('modal2_template') modal2_template:any;
+      modal2:any;
+
+      constructor(private modalService:NgbModal) &#123;
+      }
+
+      open2() &#123;
+        this.modal2 = this.modalService.open(this.modal2_template, &#123;
+          backdrop: true,
+          keyboard: true
+        });
+      }
+    </code>
 </section>
