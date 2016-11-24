@@ -20,10 +20,38 @@
     position: absolute;
     width: 15px;
     height: 15px;
+    top: 30px;
+    right: 30px;
     background-image: url("../../images/modal_btn_close.png");
 }
 
 .px-modal-header a:hover,
 .px-modal-header a:focus {
     background-image: url("../../images/modal_btn_close_hover.png");
+}
+
+.px-modal-body {
+    text-align: center;
+    min-height: 190px;
+}
+
+.px-modal-footer {
+    text-align: center;
+}
+
+.px-modal-footer button:not(:first-child) {
+    margin-left: 5px;
+}
+
+.px-modal-confirm {
+    padding-top: 30px;
+}
+
+.px-modal-confirm img {
+}
+
+.px-modal-confirm h5 {
+    font-size: 18px;
+    color: #4d5761;
+    padding: 11px 70px;
 }
