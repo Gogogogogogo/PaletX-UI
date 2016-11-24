@@ -46,7 +46,7 @@
 
   <h2>场景四：带有校验的</h2>
   <div class="px-input-wrapper">
-    <input class="px-input lg" placeholder="带有校验的" required>
-    <span class="validation">输入不能为空</span>
+    <input class="px-input lg" placeholder="带有校验的" required [(ngModel)]="inputValue" #input="ngModel">
+    <span class="validation" *ngIf="input.errors?.required">输入不能为空</span>
   </div>
 </section>
