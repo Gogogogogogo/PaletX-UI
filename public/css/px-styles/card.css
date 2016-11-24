@@ -6,6 +6,7 @@
     border: 1px solid #e6e6e6;
     height: 230px;
     width: 360px;
+    margin-right: 32px;
 }
 
 .px-card:hover {
@@ -25,5 +26,4 @@
     padding: 20px;
     color: #7c868d;
     font-size: 14px;
-    vertical-align: middle;
 }
