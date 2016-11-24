@@ -6,6 +6,7 @@ import { CssButtonComponent } from './button/css-button.component';
 import { CssBreadcrumbComponent } from './breadcrumb/css-breadcrumb.component';
 import { CssAlertComponent } from './alert/css-alert.component';
 import { CssCardComponent } from './card/css-card.component';
+import { CssModalComponent } from './modal/css-modal.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { CssCardComponent } from './card/css-card.component';
     CssButtonComponent,
     CssBreadcrumbComponent,
     CssAlertComponent,
-    CssCardComponent
+    CssCardComponent,
+    CssModalComponent
   ],
   imports: [
     SharedModule,
