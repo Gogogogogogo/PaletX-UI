@@ -25,3 +25,11 @@ textarea:-moz-placeholder {
 .px-input:focus {
     border: 1px solid #3fb3ff;
 }
+
+.px-input.sm {
+    width: 190px;
+}
+
+.px-input:disabled {
+    background-color: #f2f2f2;
+}

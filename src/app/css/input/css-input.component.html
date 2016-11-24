@@ -4,6 +4,26 @@
 </section>
 
 <section class="px-content">
-  <h2>场景一：标准尺寸</h2>
-  <input class="px-input lg" placeholder="placeholder">
+  <h2>场景一：基本类型</h2>
+  <input class="px-input lg" placeholder="大尺寸">
+  <input class="px-input sm" placeholder="小尺寸">
+  <div class="h-20"></div>
+  <p><a role="button" class="a-btn-code-example" (click)="isCollapse1 = !isCollapse1">代码示例 <i class="fa fa-plus"></i></a></p>
+  <pre class="px-pre" [ngbCollapse]="isCollapse1">
+    <code class="px-code">
+      &lt;input class="px-input lg" placeholder="大尺寸">
+      &lt;input class="px-input sm" placeholder="小尺寸">
+    </code>
+  </pre>
+  <h2>场景二：禁用的</h2>
+  <input class="px-input lg" placeholder="禁用的" disabled>
+  <input class="px-input sm" placeholder="禁用的" disabled>
+  <div class="h-20"></div>
+  <p><a role="button" class="a-btn-code-example" (click)="isCollapse2 = !isCollapse2">代码示例 <i class="fa fa-plus"></i></a></p>
+  <pre class="px-pre" [ngbCollapse]="isCollapse2">
+    <code class="px-code">
+      &lt;input class="px-input lg" placeholder="禁用的">
+      &lt;input class="px-input sm" placeholder="禁用的">
+    </code>
+  </pre>
 </section>
