@@ -5,5 +5,6 @@ import { Component } from '@angular/core';
 })
 
 export class CssCardComponent {
-
+  isCollapse1:boolean = true;
+  isCollapse2:boolean = true;
 }

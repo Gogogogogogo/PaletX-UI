@@ -27,3 +27,7 @@
     color: #7c868d;
     font-size: 14px;
 }
+
+.px-card.no-title {
+    height: 180px;
+}

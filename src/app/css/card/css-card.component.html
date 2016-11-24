@@ -30,5 +30,62 @@
       这是卡片的中心内容
     </div>
   </div>
+  <div class="h-20"></div>
+  <p><a role="button" class="a-btn-code-example" (click)="isCollapse1 = !isCollapse1">代码示例 <i class="fa fa-plus"></i></a></p>
+  <pre class="px-pre" [ngbCollapse]="isCollapse1">
+    <code class="px-code">
+      &lt;div class="px-card">
+        &lt;div class="px-card-title">
+          卡片标题
+        &lt;/div>
+        &lt;div class="px-card-content">
+          这是卡片的中心内容
+        &lt;/div>
+      &lt;/div>
+      &lt;div class="px-card">
+        &lt;div class="px-card-title">
+          卡片标题
+        &lt;/div>
+        &lt;div class="px-card-content">
+          这是卡片的中心内容
+        &lt;/div>
+      &lt;/div>
+      &lt;div class="px-card">
+        &lt;div class="px-card-title">
+          卡片标题
+        &lt;/div>
+        &lt;div class="px-card-content">
+          这是卡片的中心内容
+        &lt;/div>
+      &lt;/div>
+    </code>
+  </pre>
 
+  <h2>场景二：无标题的卡片</h2>
+  <div class="px-card no-title">
+    <div class="px-card-content">
+      这是卡片的中心内容
+    </div>
+  </div>
+  <div class="px-card no-title">
+    <div class="px-card-content">
+      这是卡片的中心内容
+    </div>
+  </div>
+  <div class="h-20"></div>
+  <p><a role="button" class="a-btn-code-example" (click)="isCollapse2 = !isCollapse2">代码示例 <i class="fa fa-plus"></i></a></p>
+  <pre class="px-pre" [ngbCollapse]="isCollapse2">
+    <code class="px-code">
+      &lt;div class="px-card no-title">
+        &lt;div class="px-card-content">
+          这是卡片的中心内容
+        &lt;/div>
+      &lt;/div>
+      &lt;div class="px-card no-title">
+        &lt;div class="px-card-content">
+          这是卡片的中心内容
+        &lt;/div>
+      &lt;/div>
+    </code>
+  </pre>
 </section>
