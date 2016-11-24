@@ -8,6 +8,7 @@ import { CssAlertComponent } from './alert/css-alert.component';
 import { CssCardComponent } from './card/css-card.component';
 import { CssModalComponent } from './modal/css-modal.component';
 import { CssTabComponent } from './tab/css-tab.component';
+import { CssInputComponent } from './input/css-input.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { CssTabComponent } from './tab/css-tab.component';
     CssAlertComponent,
     CssCardComponent,
     CssModalComponent,
-    CssTabComponent
+    CssTabComponent,
+    CssInputComponent
   ],
   imports: [
     SharedModule,

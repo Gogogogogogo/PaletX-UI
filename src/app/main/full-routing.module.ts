@@ -28,6 +28,7 @@ import { CssAlertComponent } from '../css/alert/css-alert.component';
 import { CssCardComponent } from '../css/card/css-card.component';
 import { CssModalComponent } from '../css/modal/css-modal.component';
 import { CssTabComponent } from '../css/tab/css-tab.component';
+import { CssInputComponent } from '../css/input/css-input.component';
 
 const routes = [
   {
@@ -156,6 +157,10 @@ const routes = [
           {
             path: 'tab',
             component: CssTabComponent
+          },
+          {
+            path: 'input',
+            component: CssInputComponent
           }
         ]
       }
