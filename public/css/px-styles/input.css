@@ -13,7 +13,7 @@ textarea:-moz-placeholder {
     height: 36px;
     border-radius: 2px;
     border: 1px solid #ddd;
-    padding: 0 10px;
+    padding-left: 10px;
     font-size: 14px;
     color: #4d5761;
 }
