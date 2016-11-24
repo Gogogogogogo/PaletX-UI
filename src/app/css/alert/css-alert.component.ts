@@ -8,7 +8,8 @@ export class CssAlertComponent {
 
   isCollapse1:boolean = true;
   isCollapse2:boolean = true;
-  
+  isCollapse3:boolean = true;
+
   isShowSuccess:boolean = false;
   isShowAttention:boolean = false;
   isShowAlarm:boolean = false;
