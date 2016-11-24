@@ -19,7 +19,7 @@ textarea:-moz-placeholder {
 }
 
 .px-input.ng-invalid {
-    border: 1px solid #ff5b55;
+    border-color: #ff5b55;
 }
 
 .px-input.lg {
@@ -27,7 +27,7 @@ textarea:-moz-placeholder {
 }
 
 .px-input:focus {
-    border: 1px solid #3fb3ff;
+    border-color: #3fb3ff;
 }
 
 .px-input.sm {
@@ -72,4 +72,12 @@ textarea:-moz-placeholder {
     border-left: 0;
     border-top-right-radius: 2px;
     border-bottom-right-radius: 2px;
+}
+
+.px-input.addon:focus + span.addon {
+    border-color: #3fb3ff;
+}
+
+.px-input.addon.ng-invalid + span.addon {
+    border-color: #ff5b55;
 }
