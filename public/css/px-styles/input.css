@@ -40,6 +40,7 @@ textarea:-moz-placeholder {
 
 .px-input-wrapper {
     margin-bottom: 14px;
+    max-width: 400px;
 }
 
 .px-input-wrapper span {
@@ -51,4 +52,24 @@ textarea:-moz-placeholder {
 
 .px-input-wrapper span.validation {
     color: #ff5b55;
+}
+
+.px-input.lg.addon {
+    width: 360px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.px-input-wrapper span.addon {
+    width: 40px;
+    height: 36px;
+    text-align: center;
+    color: #c2c6c9;
+    font-size: 14px;
+    padding: 11px 0;
+    float: right;
+    border: 1px solid #ddd;
+    border-left: 0;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
 }
