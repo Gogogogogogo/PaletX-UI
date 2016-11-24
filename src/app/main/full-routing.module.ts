@@ -25,6 +25,7 @@ import { HomeComponent } from './home/home.component';
 import { CssButtonComponent } from '../css/button/css-button.component';
 import { CssBreadcrumbComponent } from '../css/breadcrumb/css-breadcrumb.component';
 import { CssAlertComponent } from '../css/alert/css-alert.component';
+import { CssCardComponent } from '../css/card/css-card.component';
 
 const routes = [
   {
@@ -141,6 +142,10 @@ const routes = [
           {
             path: 'alert',
             component: CssAlertComponent
+          },
+          {
+            path: 'card',
+            component: CssCardComponent
           }
         ]
       }

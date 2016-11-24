@@ -5,13 +5,15 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CssButtonComponent } from './button/css-button.component';
 import { CssBreadcrumbComponent } from './breadcrumb/css-breadcrumb.component';
 import { CssAlertComponent } from './alert/css-alert.component';
+import { CssCardComponent } from './card/css-card.component';
 
 @NgModule({
   declarations: [
     CssComponent,
     CssButtonComponent,
     CssBreadcrumbComponent,
-    CssAlertComponent
+    CssAlertComponent,
+    CssCardComponent
   ],
   imports: [
     SharedModule,
