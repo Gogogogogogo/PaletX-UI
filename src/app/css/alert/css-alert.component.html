@@ -34,6 +34,22 @@
   <p>警告提示需要手动关闭</p>
   <button class="btn px-btn px-btn-default" (click)="isShowAttention = true">打开警告提示</button>
   <div class="px-alert px-alert-attention" *ngIf="isShowAttention">
+    <a role="button" class="px-alert-close" (click)="isShowAttention = false"></a>
     <b>警告！</b>系统存在安全风险，请进行检测。
   </div>
+  <div class="h-20"></div>
+  <p><a role="button" class="a-btn-code-example" (click)="isCollapse2 = !isCollapse1">代码示例 <i class="fa fa-plus"></i></a></p>
+  <pre class="px-pre" [ngbCollapse]="isCollapse2">
+    <code class="px-code">
+      //html
+      &lt;button class="btn px-btn px-btn-default" (click)="isShowAttention = true">打开警告提示&lt;/button>
+        &lt;div class="px-alert px-alert-attention" *ngIf="isShowAttention">
+        &lt;a role="button" class="px-alert-close" (click)="isShowAttention = false">&lt;/a>
+        &lt;b>警告！&lt;/b>系统存在安全风险，请进行检测。
+      &lt;/div>
+
+      //typescript
+      isShowAttention:boolean = false;
+    </code>
+  </pre>
 </section>

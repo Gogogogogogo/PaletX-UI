@@ -22,3 +22,16 @@
 .px-alert-attention {
     background-color: #f7c515;
 }
+
+.px-alert-close {
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    width: 15px;
+    height: 15px;
+    background-image: url("../../../public/images/alert_btn_close.png");
+}
+
+.px-alert-close:hover {
+    background-image: url("../../../public/images/alert_btn_close_hover.png");
+}

@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 export class CssAlertComponent {
 
   isCollapse1:boolean = true;
+  isCollapse2:boolean = true;
   
   isShowSuccess:boolean = false;
   isShowAttention:boolean = false;
