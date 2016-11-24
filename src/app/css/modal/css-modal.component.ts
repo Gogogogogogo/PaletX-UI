@@ -6,6 +6,9 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 })
 
 export class CssModalComponent {
+
+  isCollapse1:boolean = true;
+  
   @ViewChild('modal1_template') modal1_template:any;
   modal1:any;
 
