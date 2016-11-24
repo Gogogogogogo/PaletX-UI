@@ -53,10 +53,14 @@
   <p><a role="button" class="a-btn-code-example" (click)="isCollapse3 = !isCollapse3">代码示例 <i class="fa fa-plus"></i></a></p>
   <pre class="px-pre" [ngbCollapse]="isCollapse3">
     <code class="px-code">
+      //html
       &lt;div class="px-input-wrapper">
         &lt;input class="px-input lg" placeholder="带有校验的" required [(ngModel)]="inputValue" #input="ngModel">
         &lt;span class="validation" *ngIf="input.errors?.required">输入不能为空&lt;/span>
       &lt;/div>
+
+      //typescript
+      inputValue:string;
     </code>
   </pre>
 </section>
