@@ -22,4 +22,27 @@
       </template>
     </ngb-tab>
   </ngb-tabset>
+  <div class="h-20"></div>
+  <p><a role="button" class="a-btn-code-example" (click)="isCollapse1 = !isCollapse1">代码示例 <i class="fa fa-plus"></i></a></p>
+  <pre class="px-pre" [ngbCollapse]="isCollapse1">
+    <code class="px-code">
+      &lt;ngb-tabset>
+        &lt;ngb-tab title="标题1">
+          &lt;template ngbTabContent>
+            这是内容一
+          &lt;/template>
+        &lt;/ngb-tab>
+        &lt;ngb-tab title="标题2">
+          &lt;template ngbTabContent>
+            这是内容二
+          &lt;/template>
+        &lt;/ngb-tab>
+        &lt;ngb-tab title="标题3">
+          &lt;template ngbTabContent>
+            这是内容三
+          &lt;/template>
+        &lt;/ngb-tab>
+      &lt;/ngb-tabset>
+    </code>
+  </pre>
 </section>

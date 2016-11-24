@@ -5,5 +5,5 @@ import { Component } from '@angular/core';
 })
 
 export class CssTabComponent {
-
+  isCollapse1:boolean = true;
 }
