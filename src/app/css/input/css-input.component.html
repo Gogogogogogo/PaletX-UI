@@ -73,4 +73,18 @@
     <input class="px-input sm addon" placeholder="带有单位或图标的">
     <span class="addon">GB</span>
   </div>
+  <div class="h-20"></div>
+  <p><a role="button" class="a-btn-code-example" (click)="isCollapse5 = !isCollapse5">代码示例 <i class="fa fa-plus"></i></a></p>
+  <pre class="px-pre" [ngbCollapse]="isCollapse5">
+    <code class="px-code">
+      &lt;div class="px-input-wrapper">
+        &lt;input class="px-input lg addon" placeholder="带有单位或图标的">
+        &lt;span class="addon">GB&lt;/span>
+      &lt;/div>
+      &lt;div class="px-input-wrapper">
+        &lt;input class="px-input sm addon" placeholder="带有单位或图标的">
+        &lt;span class="addon">GB&lt;/span>
+      &lt;/div>
+    </code>
+  </pre>
 </section>
