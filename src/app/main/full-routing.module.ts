@@ -27,6 +27,7 @@ import { CssBreadcrumbComponent } from '../css/breadcrumb/css-breadcrumb.compone
 import { CssAlertComponent } from '../css/alert/css-alert.component';
 import { CssCardComponent } from '../css/card/css-card.component';
 import { CssModalComponent } from '../css/modal/css-modal.component';
+import { CssTabComponent } from '../css/tab/css-tab.component';
 
 const routes = [
   {
@@ -151,6 +152,10 @@ const routes = [
           {
             path: 'modal',
             component: CssModalComponent
+          },
+          {
+            path: 'tab',
+            component: CssTabComponent
           }
         ]
       }
