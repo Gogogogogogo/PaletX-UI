@@ -4,6 +4,7 @@
 </section>
 
 <section class="px-content">
+
   <h2>场景一：成功提示</h2>
   <p>成功提示在3s后自动消失</p>
   <button class="btn px-btn px-btn-success" (click)="showSuccess()">打开成功提示</button>
@@ -30,6 +31,7 @@
       }
     </code>
   </pre>
+
   <h2>场景二：警告提示</h2>
   <p>警告提示需要手动关闭</p>
   <button class="btn px-btn px-btn-default" (click)="isShowAttention = true">打开警告提示</button>
@@ -38,7 +40,7 @@
     <b>警告！</b>系统存在安全风险，请进行检测。
   </div>
   <div class="h-20"></div>
-  <p><a role="button" class="a-btn-code-example" (click)="isCollapse2 = !isCollapse1">代码示例 <i class="fa fa-plus"></i></a></p>
+  <p><a role="button" class="a-btn-code-example" (click)="isCollapse2 = !isCollapse2">代码示例 <i class="fa fa-plus"></i></a></p>
   <pre class="px-pre" [ngbCollapse]="isCollapse2">
     <code class="px-code">
       //html
@@ -52,4 +54,12 @@
       isShowAttention:boolean = false;
     </code>
   </pre>
+
+  <h2>场景三：告警提示</h2>
+  <p>告警提示需要手动关闭</p>
+  <button class="btn px-btn px-btn-delete" (click)="isShowAlarm = true">打开告警提示</button>
+  <div class="px-alert px-alert-alarm" *ngIf="isShowAlarm">
+    <a role="button" class="px-alert-close" (click)="isShowAlarm = false"></a>
+    <b>错误！</b>操作失败，请联系管理员。
+  </div>
 </section>

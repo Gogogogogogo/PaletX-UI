@@ -23,6 +23,10 @@
     background-color: #f7c515;
 }
 
+.px-alert-alarm {
+    background-color: #ff625d;
+}
+
 .px-alert-close {
     position: absolute;
     top: 12px;

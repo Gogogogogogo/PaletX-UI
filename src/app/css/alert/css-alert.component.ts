@@ -11,6 +11,7 @@ export class CssAlertComponent {
   
   isShowSuccess:boolean = false;
   isShowAttention:boolean = false;
+  isShowAlarm:boolean = false;
 
   showSuccess() {
     this.isShowSuccess = true;
