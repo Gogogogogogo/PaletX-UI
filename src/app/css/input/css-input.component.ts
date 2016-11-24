@@ -10,6 +10,7 @@ export class CssInputComponent {
   isCollapse3:boolean = true;
   isCollapse4:boolean = true;
   isCollapse5:boolean = true;
+  isCollapse6:boolean = true;
 
   inputValue:string;
 }

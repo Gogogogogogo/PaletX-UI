@@ -94,4 +94,15 @@
     <i class="link">-</i>
     <input class="px-input sm" placeholder="To">
   </div>
+  <div class="h-20"></div>
+  <p><a role="button" class="a-btn-code-example" (click)="isCollapse6 = !isCollapse6">代码示例 <i class="fa fa-plus"></i></a></p>
+  <pre class="px-pre" [ngbCollapse]="isCollapse6">
+    <code class="px-code">
+      &lt;div class="px-input-wrapper">
+        &lt;input class="px-input sm" placeholder="From">
+        &lt;i class="link">-&lt;/i>
+        &lt;input class="px-input sm" placeholder="To">
+      &lt;/div>
+    </code>
+  </pre>
 </section>
