@@ -3,6 +3,37 @@
   <small>位于页面最顶部导航栏下，提供三种不同的场景</small>
 </section>
 
-<div class="px-alert px-alert-success">
-  您的操作已经成功。3s后此提示自动消失。
-</div>
+<section class="px-content">
+  <h2>场景一：成功提示</h2>
+  <p>成功提示在3s后自动消失</p>
+  <button class="btn px-btn px-btn-success" (click)="showSuccess()">打开成功提示</button>
+  <div class="px-alert px-alert-success" *ngIf="isShowSuccess">
+    您的操作已经成功。3s后此提示自动消失。
+  </div>
+  <div class="h-20"></div>
+  <p><a role="button" class="a-btn-code-example" (click)="isCollapse1 = !isCollapse1">代码示例 <i class="fa fa-plus"></i></a></p>
+  <pre class="px-pre" [ngbCollapse]="isCollapse1">
+    <code class="px-code">
+      //html
+      &lt;button class="btn px-btn px-btn-success" (click)="showSuccess()">打开成功提示&lt;/button>
+      &lt;div class="px-alert px-alert-success" *ngIf="isShowSuccess">
+        您的操作已经成功。3s后此提示自动消失。
+      &lt;/div>
+
+      //typescript
+      isShowSuccess:boolean = false;
+      showSuccess() &#123;
+        this.isShowSuccess = true;
+        setTimeout(()=> &#123;
+          this.isShowSuccess = false;
+        }, 3000);
+      }
+    </code>
+  </pre>
+  <h2>场景二：警告提示</h2>
+  <p>警告提示需要手动关闭</p>
+  <button class="btn px-btn px-btn-default" (click)="isShowAttention = true">打开警告提示</button>
+  <div class="px-alert px-alert-attention" *ngIf="isShowAttention">
+    <b>警告！</b>系统存在安全风险，请进行检测。
+  </div>
+</section>

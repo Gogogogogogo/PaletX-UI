@@ -6,4 +6,15 @@ import { Component } from '@angular/core';
 
 export class CssAlertComponent {
 
+  isCollapse1:boolean = true;
+  
+  isShowSuccess:boolean = false;
+  isShowAttention:boolean = false;
+
+  showSuccess() {
+    this.isShowSuccess = true;
+    setTimeout(()=> {
+      this.isShowSuccess = false;
+    }, 3000);
+  }
 }
