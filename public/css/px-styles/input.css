@@ -88,6 +88,7 @@
 }
 
 .px-input-wrapper i.link {
+    font-size: 12px;
     color: #ddd;
-    padding: 0 4px 0 2px;
+    padding: 0 9px 0 7px;
 }

@@ -9,6 +9,7 @@
     min-height: 310px;
     border: 0;
     padding: 30px;
+    font-size: 0;
 }
 
 .px-modal-header h4 {
@@ -40,7 +41,7 @@
 }
 
 .px-modal-footer button:not(:first-child) {
-    margin-left: 5px;
+    margin-left: 10px;
 }
 
 .px-modal-confirm {

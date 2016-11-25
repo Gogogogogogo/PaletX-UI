@@ -43,4 +43,14 @@
       &lt;/div>
     </code>
   </pre>
+  <h2>场景二：带输入模式</h2>
+  <div ngbDropdown class="px-select addon">
+    <input [(ngModel)]="inputSelect3" placeholder="请选择或输入">
+    <a class="addon" role="button" ngbDropdownToggle></a>
+    <div class="dropdown-menu">
+      <button (click)="inputSelect3 = '选项1'">选项1</button>
+      <button (click)="inputSelect3 = '选项2'">选项2</button>
+      <button (click)="inputSelect3 = '选项3'">选项3</button>
+    </div>
+  </div>
 </section>

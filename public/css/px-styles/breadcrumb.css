@@ -12,10 +12,12 @@
 
 .breadcrumb > li {
     color: #7c868d;
+    font-size: 12px;
 }
 
 .breadcrumb a,
 .breadcrumb a:hover,
 .breadcrumb a:focus {
     color: #3fb4ff;
+    font-size: 12px;
 }
