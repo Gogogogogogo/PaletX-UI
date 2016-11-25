@@ -5,5 +5,5 @@ import { Component } from '@angular/core';
 })
 
 export class CssRadioComponent {
-
+  isCollapse1:boolean = true;
 }
