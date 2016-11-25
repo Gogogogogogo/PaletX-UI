@@ -4,10 +4,10 @@
 }
 
 .breadcrumb > li + li:before {
-    padding-left: 6px;
-    padding-right: 3px;
-    content: ">\00a0";
-    color: #bbbbbb;
+    padding-left: 10px;
+    padding-right: 10px;
+    content: "/";
+    color: #ddd;
 }
 
 .breadcrumb > li {
