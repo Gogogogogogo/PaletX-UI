@@ -1,0 +1,35 @@
+/*****************************/
+/* checkbox
+/****************************/
+.px-checkbox {
+    -webkit-appearance: none;
+    background-size: 16px 16px;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    margin-right: 0;
+    height: 16px;
+    width: 16px;
+    outline: none;
+    vertical-align: bottom;
+    margin-top: 0;
+    cursor: pointer;
+}
+
+.px-checkbox:hover {
+    background-image: url("../../images/icon_select_normal.png");
+    outline: none;
+    border: none;
+}
+
+.px-checkbox:checked {
+    background-image: url("../../images/icon_select_selected.png");
+    outline: none;
+    border: none;
+}
+
+.px-checkbox-wrapper span {
+    font-size: 14px;
+    color: #7c868d;
+    margin-left: 6px;
+    cursor: pointer;
+}
