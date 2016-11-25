@@ -11,6 +11,7 @@ import { CssTabComponent } from './tab/css-tab.component';
 import { CssInputComponent } from './input/css-input.component';
 import { CssSelectComponent } from './select/css-select.component';
 import { CssCheckboxComponent } from './checkbox/css-checkbox.component';
+import { CssRadioComponent } from './radio/css-radio.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { CssCheckboxComponent } from './checkbox/css-checkbox.component';
     CssTabComponent,
     CssInputComponent,
     CssSelectComponent,
-    CssCheckboxComponent
+    CssCheckboxComponent,
+    CssRadioComponent
   ],
   imports: [
     SharedModule,
