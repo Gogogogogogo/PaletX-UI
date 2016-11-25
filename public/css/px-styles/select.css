@@ -1,6 +1,10 @@
 /*****************************/
 /* select
 /****************************/
+.px-select {
+    margin-bottom: 20px;
+}
+
 .px-select input {
     outline: none;
     height: 36px;
@@ -13,5 +17,41 @@
 }
 
 .px-select input:focus {
-    border-color: #3fb3ff;
+    border-bottom: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.px-select .dropdown-menu {
+    margin: 0;
+    border: 1px solid #ddd;
+    width: 400px;
+    border-radius: 2px;
+    border-top: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    padding: 0;
+}
+
+.px-select .dropdown-menu button {
+    width: 398px;
+    height: 36px;
+    text-align: left;
+    padding: 0 10px;
+    font-size: 14px;
+    color: #7c868d;
+    display: block;
+    margin: 0;
+    border: 0;
+    background: #fff;
+}
+
+.px-select .dropdown-menu button:hover {
+    color: #4d5761;
+    background: #fcfcfc;
+}
+
+.px-select .dropdown-menu button:focus {
+    color: #fff;
+    background: #3fb3ff;
 }
