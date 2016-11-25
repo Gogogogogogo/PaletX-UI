@@ -12,6 +12,7 @@ import { CssInputComponent } from './input/css-input.component';
 import { CssSelectComponent } from './select/css-select.component';
 import { CssCheckboxComponent } from './checkbox/css-checkbox.component';
 import { CssRadioComponent } from './radio/css-radio.component';
+import { CssProgressComponent } from './progress/css-progress.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { CssRadioComponent } from './radio/css-radio.component';
     CssInputComponent,
     CssSelectComponent,
     CssCheckboxComponent,
-    CssRadioComponent
+    CssRadioComponent,
+    CssProgressComponent
   ],
   imports: [
     SharedModule,

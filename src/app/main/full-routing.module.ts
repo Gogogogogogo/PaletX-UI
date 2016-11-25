@@ -32,6 +32,7 @@ import { CssInputComponent } from '../css/input/css-input.component';
 import { CssSelectComponent } from '../css/select/css-select.component';
 import { CssCheckboxComponent } from '../css/checkbox/css-checkbox.component';
 import { CssRadioComponent } from '../css/radio/css-radio.component';
+import { CssProgressComponent } from '../css/progress/css-progress.component';
 
 const routes = [
   {
@@ -176,6 +177,10 @@ const routes = [
           {
             path: 'radio',
             component: CssRadioComponent
+          },
+          {
+            path: 'progress',
+            component: CssProgressComponent
           }
         ]
       }
