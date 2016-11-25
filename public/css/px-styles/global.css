@@ -30,3 +30,10 @@ button:focus {
 .h-20 {
     height: 20px;
 }
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder,
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+    color: #c2c6c9;
+}

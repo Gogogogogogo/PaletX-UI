@@ -1,13 +1,6 @@
 /*****************************/
 /* input
 /****************************/
-input::-webkit-input-placeholder,
-textarea::-webkit-input-placeholder,
-input:-moz-placeholder,
-textarea:-moz-placeholder {
-    color: #c2c6c9;
-}
-
 .px-input {
     outline: none;
     height: 36px;

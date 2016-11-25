@@ -1,0 +1,16 @@
+<section class="px-content-header">
+  <h1>下拉选择框-Select</h1>
+  <small>提供两种不同的场景</small>
+</section>
+
+<section class="px-content">
+  <h2>场景一：不带输入模式</h2>
+  <div ngbDropdown class="px-select">
+    <input ngbDropdownToggle [(ngModel)]="inputSelect" #input="ngModel" readonly placeholder="请选择">
+    <div class="dropdown-menu">
+      <button class="btn px-btn px-btn-default" (click)="inputSelect = '选项1'">选项1</button>
+      <button class="btn px-btn px-btn-default">选项2</button>
+      <button class="btn px-btn px-btn-default">选项3</button>
+    </div>
+  </div>
+</section>
