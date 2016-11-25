@@ -6,4 +6,5 @@ import { Component } from '@angular/core';
 
 export class CssSelectComponent {
   isCollapse1:boolean = true;
+  isCollapse2:boolean = true;
 }
