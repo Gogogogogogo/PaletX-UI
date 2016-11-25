@@ -23,4 +23,28 @@
       <span>选项四</span>
     </label>
   </div>
+  <div class="h-20"></div>
+  <p><a role="button" class="a-btn-code-example" (click)="isCollapse1 = !isCollapse1">代码示例 <i class="fa fa-plus"></i></a></p>
+  <pre class="px-pre" [ngbCollapse]="isCollapse1">
+    <code class="px-code">
+      &lt;div class="px-checkbox-group">
+        &lt;label class="px-checkbox-wrapper">
+          &lt;input type="checkbox" class="px-checkbox">
+          &lt;span>选项一&lt;/span>
+        &lt;/label>
+        &lt;label class="px-checkbox-wrapper">
+          &lt;input type="checkbox" class="px-checkbox" checked>
+          &lt;span>选项二&lt;/span>
+        &lt;/label>
+        &lt;label class="px-checkbox-wrapper">
+          &lt;input type="checkbox" class="px-checkbox" disabled>
+          &lt;span>选项三&lt;/span>
+        &lt;/label>
+        &lt;label class="px-checkbox-wrapper">
+          &lt;input type="checkbox" class="px-checkbox" checked disabled>
+          &lt;span>选项四&lt;/span>
+        &lt;/label>
+      &lt;/div>
+    </code>
+  </pre>
 </section>

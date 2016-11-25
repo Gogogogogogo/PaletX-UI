@@ -5,5 +5,5 @@ import { Component } from '@angular/core';
 })
 
 export class CssCheckboxComponent {
-
+  isCollapse1:boolean = true;
 }
