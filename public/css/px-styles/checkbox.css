@@ -59,3 +59,16 @@
     color: #c2c6c9;
     cursor: not-allowed;
 }
+
+.px-checkbox:disabled:checked,
+.px-checkbox:disabled:checked:hover {
+    background-image: url("../../images/icon_select_disabled_checked.png");
+    outline: none;
+    border: none;
+    cursor: not-allowed;
+}
+
+.px-checkbox:disabled:checked + span {
+    color: #c2c6c9;
+    cursor: not-allowed;
+}
