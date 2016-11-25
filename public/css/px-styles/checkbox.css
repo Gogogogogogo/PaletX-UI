@@ -69,6 +69,6 @@
 }
 
 .px-checkbox:disabled:checked + span {
-    color: #c2c6c9;
+    color: #4d5761;
     cursor: not-allowed;
 }
