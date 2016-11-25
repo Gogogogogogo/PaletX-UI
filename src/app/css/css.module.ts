@@ -10,6 +10,7 @@ import { CssModalComponent } from './modal/css-modal.component';
 import { CssTabComponent } from './tab/css-tab.component';
 import { CssInputComponent } from './input/css-input.component';
 import { CssSelectComponent } from './select/css-select.component';
+import { CssCheckboxComponent } from './checkbox/css-checkbox.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { CssSelectComponent } from './select/css-select.component';
     CssModalComponent,
     CssTabComponent,
     CssInputComponent,
-    CssSelectComponent
+    CssSelectComponent,
+    CssCheckboxComponent
   ],
   imports: [
     SharedModule,

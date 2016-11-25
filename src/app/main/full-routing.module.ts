@@ -30,6 +30,7 @@ import { CssModalComponent } from '../css/modal/css-modal.component';
 import { CssTabComponent } from '../css/tab/css-tab.component';
 import { CssInputComponent } from '../css/input/css-input.component';
 import { CssSelectComponent } from '../css/select/css-select.component';
+import { CssCheckboxComponent } from '../css/checkbox/css-checkbox.component';
 
 const routes = [
   {
@@ -166,6 +167,10 @@ const routes = [
           {
             path: 'select',
             component: CssSelectComponent
+          },
+          {
+            path: 'checkbox',
+            component: CssCheckboxComponent
           }
         ]
       }
