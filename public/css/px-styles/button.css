@@ -23,6 +23,11 @@
     -ms-user-select: none;
 }
 
+.px-btn.disabled, .px-btn:disabled {
+    opacity: .5;
+    cursor: not-allowed;
+}
+
 .px-btn i {
     padding: 0 12px 0 0;
 }
