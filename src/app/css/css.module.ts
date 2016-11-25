@@ -9,6 +9,7 @@ import { CssCardComponent } from './card/css-card.component';
 import { CssModalComponent } from './modal/css-modal.component';
 import { CssTabComponent } from './tab/css-tab.component';
 import { CssInputComponent } from './input/css-input.component';
+import { CssSelectComponent } from './select/css-select.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { CssInputComponent } from './input/css-input.component';
     CssCardComponent,
     CssModalComponent,
     CssTabComponent,
-    CssInputComponent
+    CssInputComponent,
+    CssSelectComponent
   ],
   imports: [
     SharedModule,

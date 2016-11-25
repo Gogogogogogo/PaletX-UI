@@ -29,6 +29,7 @@ import { CssCardComponent } from '../css/card/css-card.component';
 import { CssModalComponent } from '../css/modal/css-modal.component';
 import { CssTabComponent } from '../css/tab/css-tab.component';
 import { CssInputComponent } from '../css/input/css-input.component';
+import { CssSelectComponent } from '../css/select/css-select.component';
 
 const routes = [
   {
@@ -161,6 +162,10 @@ const routes = [
           {
             path: 'input',
             component: CssInputComponent
+          },
+          {
+            path: 'select',
+            component: CssSelectComponent
           }
         ]
       }
