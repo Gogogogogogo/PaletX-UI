@@ -62,9 +62,20 @@
 
 .px-select.addon input {
     width: 360px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
 }
 
 .px-select.addon a.addon:after {
     font-size: 12px;
     color: #c2c6c9;
+}
+
+.px-select.addon a.addon {
+    padding: 10px 16px 10px 13px;
+    border: 1px solid #ddd;
+    font-size: 12px;
+    border-left: 0;
+    border-bottom-right-radius: 2px;
+    border-top-right-radius: 2px;
 }
