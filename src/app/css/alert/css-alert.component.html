@@ -7,7 +7,7 @@
 
   <h2>场景一：成功提示</h2>
   <p>成功提示在3s后自动消失</p>
-  <button class="btn px-btn px-btn-success" (click)="showSuccess()">打开成功提示</button>
+  <button class="px-btn px-btn-success" (click)="showSuccess()">打开成功提示</button>
   <div class="px-alert px-alert-success" *ngIf="isShowSuccess">
     您的操作已经成功。3s后此提示自动消失。
   </div>
@@ -16,7 +16,7 @@
   <pre class="px-pre" [ngbCollapse]="isCollapse1">
     <code class="px-code">
       //html
-      &lt;button class="btn px-btn px-btn-success" (click)="showSuccess()">打开成功提示&lt;/button>
+      &lt;button class="px-btn px-btn-success" (click)="showSuccess()">打开成功提示&lt;/button>
       &lt;div class="px-alert px-alert-success" *ngIf="isShowSuccess">
         您的操作已经成功。3s后此提示自动消失。
       &lt;/div>
@@ -34,7 +34,7 @@
 
   <h2>场景二：警告提示</h2>
   <p>警告提示需要手动关闭</p>
-  <button class="btn px-btn px-btn-primary" (click)="isShowAttention = true">打开警告提示</button>
+  <button class="px-btn px-btn-primary" (click)="isShowAttention = true">打开警告提示</button>
   <div class="px-alert px-alert-attention" *ngIf="isShowAttention">
     <a role="button" class="px-alert-close" (click)="isShowAttention = false"></a>
     <b>警告！</b>系统存在安全风险，请进行检测。
@@ -44,7 +44,7 @@
   <pre class="px-pre" [ngbCollapse]="isCollapse2">
     <code class="px-code">
       //html
-      &lt;button class="btn px-btn px-btn-primary" (click)="isShowAttention = true">打开警告提示&lt;/button>
+      &lt;button class="px-btn px-btn-primary" (click)="isShowAttention = true">打开警告提示&lt;/button>
         &lt;div class="px-alert px-alert-attention" *ngIf="isShowAttention">
         &lt;a role="button" class="px-alert-close" (click)="isShowAttention = false">&lt;/a>
         &lt;b>警告！&lt;/b>系统存在安全风险，请进行检测。
@@ -57,7 +57,7 @@
 
   <h2>场景三：告警提示</h2>
   <p>告警提示需要手动关闭</p>
-  <button class="btn px-btn px-btn-delete" (click)="isShowAlarm = true">打开告警提示</button>
+  <button class="px-btn px-btn-delete" (click)="isShowAlarm = true">打开告警提示</button>
   <div class="px-alert px-alert-alarm" *ngIf="isShowAlarm">
     <a role="button" class="px-alert-close" (click)="isShowAlarm = false"></a>
     <b>错误！</b>操作失败，请联系管理员。
@@ -67,7 +67,7 @@
   <pre class="px-pre" [ngbCollapse]="isCollapse3">
     <code class="px-code">
       //html
-      &lt;button class="btn px-btn px-btn-delete" (click)="isShowAlarm = true">打开告警提示&lt;/button>
+      &lt;button class="px-btn px-btn-delete" (click)="isShowAlarm = true">打开告警提示&lt;/button>
         &lt;div class="px-alert px-alert-alarm" *ngIf="isShowAlarm">
         &lt;a role="button" class="px-alert-close" (click)="isShowAlarm = false">&lt;/a>
         &lt;b>错误！&lt;/b>操作失败，请联系管理员。
