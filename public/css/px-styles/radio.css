@@ -29,3 +29,17 @@
     background: url("../../images/icon_radio_selected.png") no-repeat left;
     color: #4d5761;
 }
+
+.px-radio:disabled + span,
+.px-radio:disabled + span:hover {
+    cursor: not-allowed;
+    background: url("../../images/icon_radio_disabled.png") no-repeat left;
+    color: #c2c6c9;
+}
+
+.px-radio:checked:disabled + span,
+.px-radio:checked:disabled + span:hover {
+    cursor: not-allowed;
+    background: url("../../images/icon_radio_selected.png") no-repeat left;
+    color: #4d5761;
+}
