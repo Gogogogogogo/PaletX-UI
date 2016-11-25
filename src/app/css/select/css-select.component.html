@@ -53,4 +53,19 @@
       <button (click)="inputSelect3 = '选项3'">选项3</button>
     </div>
   </div>
+  <div class="h-20"></div>
+  <p><a role="button" class="a-btn-code-example" (click)="isCollapse2 = !isCollapse2">代码示例 <i class="fa fa-plus"></i></a></p>
+  <pre class="px-pre" [ngbCollapse]="isCollapse2">
+    <code class="px-code">
+      &lt;div ngbDropdown class="px-select addon">
+        &lt;input [(ngModel)]="inputSelect3" placeholder="请选择或输入">
+        &lt;a class="addon" role="button" ngbDropdownToggle>&lt;/a>
+        &lt;div class="dropdown-menu">
+          &lt;button (click)="inputSelect3 = '选项1'">选项1&lt;/button>
+          &lt;button (click)="inputSelect3 = '选项2'">选项2&lt;/button>
+          &lt;button (click)="inputSelect3 = '选项3'">选项3&lt;/button>
+        &lt;/div>
+      &lt;/div>
+    </code>
+  </pre>
 </section>

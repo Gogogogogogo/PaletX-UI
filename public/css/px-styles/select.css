@@ -79,3 +79,18 @@
     border-bottom-right-radius: 2px;
     border-top-right-radius: 2px;
 }
+
+.px-select.addon a.addon:hover {
+    background: #fcfcfc;
+}
+
+.px-select.addon a.addon:focus {
+    background: #f8f8f8;
+}
+
+.px-select.addon .dropdown-menu {
+    margin: 6px 0 0 0;
+    border: 1px solid #ddd;
+    width: 400px;
+    border-radius: 2px;
+}
