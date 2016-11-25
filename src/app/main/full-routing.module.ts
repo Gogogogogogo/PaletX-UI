@@ -31,6 +31,7 @@ import { CssTabComponent } from '../css/tab/css-tab.component';
 import { CssInputComponent } from '../css/input/css-input.component';
 import { CssSelectComponent } from '../css/select/css-select.component';
 import { CssCheckboxComponent } from '../css/checkbox/css-checkbox.component';
+import { CssRadioComponent } from '../css/radio/css-radio.component';
 
 const routes = [
   {
@@ -171,6 +172,10 @@ const routes = [
           {
             path: 'checkbox',
             component: CssCheckboxComponent
+          },
+          {
+            path: 'radio',
+            component: CssRadioComponent
           }
         ]
       }
