@@ -33,3 +33,7 @@
     margin-left: 6px;
     cursor: pointer;
 }
+
+.px-checkbox:checked + span {
+    color: #4d5761;
+}
