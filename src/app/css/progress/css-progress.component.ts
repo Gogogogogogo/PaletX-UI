@@ -5,5 +5,5 @@ import { Component } from '@angular/core';
 })
 
 export class CssProgressComponent {
-
+  isCollapse1:boolean = true;
 }
