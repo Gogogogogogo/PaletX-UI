@@ -27,6 +27,10 @@
     border: none;
 }
 
+.px-checkbox-wrapper {
+    margin-bottom: 20px;
+}
+
 .px-checkbox-wrapper span {
     font-size: 14px;
     color: #7c868d;
@@ -36,4 +40,8 @@
 
 .px-checkbox:checked + span {
     color: #4d5761;
+}
+
+.px-checkbox-group .px-checkbox-wrapper:not(:first-child){
+    margin-left: 20px;
 }
