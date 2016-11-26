@@ -37,16 +37,20 @@
     max-width: 400px;
 }
 
-.px-input-wrapper span {
-    position: absolute;
+.px-input-wrapper span.validation {
     display: block;
     padding: 5px 0 0 10px;
     font-size: 12px;
-    color: #7c868d;
+    position: absolute;
+    color: #ff5b55;
 }
 
-.px-input-wrapper span.validation {
-    color: #ff5b55;
+.px-input-wrapper span.notes {
+    display: block;
+    padding: 5px 0 0 10px;
+    font-size: 12px;
+    position: absolute;
+    color: #7c868d;
 }
 
 .px-input.addon {
