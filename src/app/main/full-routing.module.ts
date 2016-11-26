@@ -34,6 +34,7 @@ import { CssCheckboxComponent } from '../css/checkbox/css-checkbox.component';
 import { CssRadioComponent } from '../css/radio/css-radio.component';
 import { CssProgressComponent } from '../css/progress/css-progress.component';
 import { CssFormComponent } from '../css/form/css-form.component';
+import { CssTableComponent } from '../css/table/css-table.component';
 
 const routes = [
   {
@@ -186,6 +187,10 @@ const routes = [
           {
             path: 'form',
             component: CssFormComponent
+          },
+          {
+            path: 'table',
+            component: CssTableComponent
           }
         ]
       }

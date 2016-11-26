@@ -14,6 +14,7 @@ import { CssCheckboxComponent } from './checkbox/css-checkbox.component';
 import { CssRadioComponent } from './radio/css-radio.component';
 import { CssProgressComponent } from './progress/css-progress.component';
 import { CssFormComponent } from './form/css-form.component';
+import { CssTableComponent } from './table/css-table.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { CssFormComponent } from './form/css-form.component';
     CssCheckboxComponent,
     CssRadioComponent,
     CssProgressComponent,
-    CssFormComponent
+    CssFormComponent,
+    CssTableComponent
   ],
   imports: [
     SharedModule,
