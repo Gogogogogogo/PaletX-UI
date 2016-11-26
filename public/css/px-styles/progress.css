@@ -31,3 +31,27 @@
 .progress.progress-success[value]::-webkit-progress-value {
     background-color: #73cf22;
 }
+
+.progress.progress-attention[value] {
+    color: #f7c515;
+}
+
+.progress.progress-attention[value]::-webkit-progress-bar {
+    background-color: #f2f2f2;
+}
+
+.progress.progress-attention[value]::-webkit-progress-value {
+    background-color: #f7c515;
+}
+
+.progress.progress-alarm[value] {
+    color: #ff625d;
+}
+
+.progress.progress-alarm[value]::-webkit-progress-bar {
+    background-color: #f2f2f2;
+}
+
+.progress.progress-alarm[value]::-webkit-progress-value {
+    background-color: #ff625d;
+}

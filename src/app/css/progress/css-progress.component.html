@@ -10,12 +10,21 @@
   <progress class="progress progress-attention" value="50" max="100"></progress>
   <progress class="progress progress-alarm" value="50" max="100"></progress>
   <progress class="progress progress-striped" value="70" max="100"></progress>
+  <progress class="progress progress-success progress-striped" value="70" max="100"></progress>
+  <progress class="progress progress-attention progress-striped" value="70" max="100"></progress>
+  <progress class="progress progress-alarm progress-striped" value="70" max="100"></progress>
   <div class="h-20"></div>
   <p><a role="button" class="a-btn-code-example" (click)="isCollapse1 = !isCollapse1">代码示例 <i class="fa fa-plus"></i></a></p>
   <pre class="px-pre" [ngbCollapse]="isCollapse1">
     <code class="px-code">
       &lt;progress class="progress" value="50" max="100">&lt;/progress>
+      &lt;progress class="progress progress-success" value="50" max="100">&lt;/progress>
+      &lt;progress class="progress progress-attention" value="50" max="100">&lt;/progress>
+      &lt;progress class="progress progress-alarm" value="50" max="100">&lt;/progress>
       &lt;progress class="progress progress-striped" value="70" max="100">&lt;/progress>
+      &lt;progress class="progress progress-success progress-striped" value="70" max="100">&lt;/progress>
+      &lt;progress class="progress progress-attention progress-striped" value="70" max="100">&lt;/progress>
+      &lt;progress class="progress progress-alarm progress-striped" value="70" max="100">&lt;/progress>
     </code>
   </pre>
 </section>
