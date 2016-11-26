@@ -11,7 +11,7 @@
     color: #4d5761;
 }
 
-.px-input.ng-invalid {
+.px-input.ng-invalid.ng-dirty {
     border-color: #ff5b55;
 }
 
@@ -88,7 +88,7 @@
     border-color: #3fb3ff;
 }
 
-.px-input.addon.ng-invalid + span.addon {
+.px-input.addon.ng-invalid.ng-dirty + span.addon {
     border-color: #ff5b55;
 }
 

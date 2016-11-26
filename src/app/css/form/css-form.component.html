@@ -10,23 +10,24 @@
 
 <section class="px-content">
   <h2>创建外部网络接口</h2>
-  <form class="px-form">
+  <form class="px-form" novalidate>
     <div class="px-form-control">
       <label for="input1">网络名称</label>
       <div class="px-input-wrapper">
-        <input class="px-input lg" id="input1">
-        <span class="notes">内容说明：名称只能为字母、数字和下划线</span>
+        <input class="px-input lg" id="input1" required #input1="ngModel" [(ngModel)]="name" name="name">
+        <span class="notes" *ngIf="!input1.errors || input1.pristine">内容说明：名称只能为字母、数字和下划线</span>
+        <span class="validation" *ngIf="input1.errors?.required && !input1.pristine">名称不能为空</span>
       </div>
     </div>
     <div class="px-form-control">
       <label for="select1">所属云环境</label>
       <div ngbDropdown class="px-select">
-        <input ngbDropdownToggle [(ngModel)]="inputSelect1" readonly placeholder="请选择" id="select1" name="select1">
+        <input ngbDropdownToggle [(ngModel)]="cloudEnv" readonly placeholder="请选择" id="select1" name="cloudEnv">
         <i class="fa fa-caret-down"></i>
         <div class="dropdown-menu">
-          <button (click)="inputSelect1 = '数据中心001'">数据中心001</button>
-          <button (click)="inputSelect1 = '数据中心002'">数据中心002</button>
-          <button (click)="inputSelect1 = '数据中心003'">数据中心003</button>
+          <button (click)="cloudEnv = '数据中心001'">数据中心001</button>
+          <button (click)="cloudEnv = '数据中心002'">数据中心002</button>
+          <button (click)="cloudEnv = '数据中心003'">数据中心003</button>
         </div>
       </div>
     </div>
