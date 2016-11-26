@@ -1,7 +1,7 @@
 /*****************************/
 /* form
 /****************************/
-.px-form-control label {
+.px-form-control > label {
     margin-bottom: 0;
     font-size: 14px;
     color: #4d5761;
@@ -17,4 +17,12 @@
 
 .px-form-control .px-select {
     display: inline-block;
+}
+
+.px-form-control .px-radio-group {
+    display: inline-block;
+}
+
+.px-form-control .px-radio-group .px-radio-wrapper:not(:first-child){
+    margin-left: 70px;
 }
