@@ -1,6 +1,9 @@
 .breadcrumb {
-    padding: 12px 0 0 0;
+    padding: 14px 0 0 0;
     background: none;
+    margin: 0;
+    border: none;
+    border-radius: 0;
 }
 
 .breadcrumb > li + li:before {
