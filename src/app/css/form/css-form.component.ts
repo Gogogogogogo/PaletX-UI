@@ -5,5 +5,5 @@ import { Component } from '@angular/core';
 })
 
 export class CssFormComponent {
-
+  isCollapse1:boolean = true;
 }
