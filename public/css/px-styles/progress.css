@@ -55,3 +55,8 @@
 .progress.progress-alarm[value]::-webkit-progress-value {
     background-color: #ff625d;
 }
+
+.progress-table {
+    width: 80px;
+    height: 8px;
+}
