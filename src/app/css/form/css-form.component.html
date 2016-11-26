@@ -2,8 +2,34 @@
   <ol class="breadcrumb">
     <li class="breadcrumb-item"><a role="button" routerLink="/main/css/alert">提示</a></li>
     <li class="breadcrumb-item"><a role="button" routerLink="/main/css/button">按钮</a></li>
-    <li class="breadcrumb-item">面包屑导航</li>
+    <li class="breadcrumb-item">表单</li>
   </ol>
   <h1>表单-Form</h1>
   <small>表单可以提交一组信息</small>
+</section>
+
+<section class="px-content">
+  <h2>创建外部网络接口</h2>
+  <form class="px-form">
+    <div class="px-form-control">
+      <label for="input1">网络名称</label>
+      <div class="px-input-wrapper">
+        <input class="px-input lg" id="input1">
+        <span class="notes">内容说明：名称只能为字母、数字和下划线</span>
+      </div>
+    </div>
+    <div class="px-form-control">
+      <label for="select1">所属云环境</label>
+      <div ngbDropdown class="px-select">
+        <input ngbDropdownToggle [(ngModel)]="inputSelect1" readonly placeholder="请选择" id="select1" name="select1">
+        <i class="fa fa-caret-down"></i>
+        <div class="dropdown-menu">
+          <button (click)="inputSelect1 = '数据中心001'">数据中心001</button>
+          <button (click)="inputSelect1 = '数据中心002'">数据中心002</button>
+          <button (click)="inputSelect1 = '数据中心003'">数据中心003</button>
+        </div>
+      </div>
+    </div>
+
+  </form>
 </section>

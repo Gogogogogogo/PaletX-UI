@@ -3,6 +3,7 @@
 /****************************/
 .px-select {
     margin-bottom: 30px;
+    position: relative;
 }
 
 .px-select input {
