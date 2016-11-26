@@ -105,4 +105,105 @@
     <button class="px-btn px-btn-primary">创建</button>
     <button class="px-btn px-btn-cancel">取消</button>
   </div>
+  <div class="h-20"></div>
+  <p><a role="button" class="a-btn-code-example" (click)="isCollapse1 = !isCollapse1">代码示例 <i class="fa fa-plus"></i></a></p>
+  <pre class="px-pre" [ngbCollapse]="isCollapse1">
+    <code class="px-code">
+      &lt;form class="px-form" novalidate>
+        &lt;div class="px-form-control">
+          &lt;label for="input1">网络名称&lt;/label>
+          &lt;div class="px-input-wrapper">
+            &lt;input class="px-input lg" id="input1" required #input1="ngModel" [(ngModel)]="name" name="name">
+            &lt;span class="notes" *ngIf="!input1.errors || input1.pristine">内容说明：名称只能为字母、数字和下划线&lt;/span>
+            &lt;span class="validation" *ngIf="input1.errors?.required && !input1.pristine">名称不能为空&lt;/span>
+          &lt;/div>
+        &lt;/div>
+        &lt;div class="px-form-control">
+          &lt;label for="select1">所属云环境&lt;/label>
+          &lt;div ngbDropdown class="px-select">
+            &lt;input ngbDropdownToggle [(ngModel)]="cloudEnv" readonly placeholder="请选择" id="select1" name="cloudEnv">
+            &lt;i class="fa fa-caret-down">&lt;/i>
+            &lt;div class="dropdown-menu">
+              &lt;button (click)="cloudEnv = '云环境1'">云环境1&lt;/button>
+              &lt;button (click)="cloudEnv = '云环境2'">云环境2&lt;/button>
+              &lt;button (click)="cloudEnv = '云环境3'">云环境3&lt;/button>
+            &lt;/div>
+          &lt;/div>
+        &lt;/div>
+        &lt;div class="px-form-control">
+          &lt;label for="select2">所属DC&lt;/label>
+          &lt;div ngbDropdown class="px-select">
+            &lt;input ngbDropdownToggle [(ngModel)]="dc" readonly placeholder="请选择" id="select2" name="dc">
+            &lt;i class="fa fa-caret-down">&lt;/i>
+            &lt;div class="dropdown-menu">
+              &lt;button (click)="dc = '数据中心1'">数据中心1&lt;/button>
+              &lt;button (click)="dc = '数据中心2'">数据中心2&lt;/button>
+              &lt;button (click)="dc = '数据中心3'">数据中心3&lt;/button>
+            &lt;/div>
+          &lt;/div>
+      &lt;/div>
+        &lt;div class="px-form-control">
+          &lt;label for="select3">网络类型&lt;/label>
+          &lt;div ngbDropdown class="px-select">
+            &lt;input ngbDropdownToggle [(ngModel)]="type" readonly placeholder="请选择" id="select3" name="type">
+            &lt;i class="fa fa-caret-down">&lt;/i>
+            &lt;div class="dropdown-menu">
+              &lt;button (click)="type = 'VXLAN'">VXLAN&lt;/button>
+              &lt;button (click)="type = 'VLAN'">VLAN&lt;/button>
+            &lt;/div>
+          &lt;/div>
+        &lt;/div>
+        &lt;div class="px-form-control">
+          &lt;label for="select4">段ID&lt;/label>
+          &lt;div ngbDropdown class="px-select">
+            &lt;input ngbDropdownToggle [(ngModel)]="tag" readonly placeholder="请选择" id="select4" name="tag">
+            &lt;i class="fa fa-caret-down">&lt;/i>
+            &lt;div class="dropdown-menu">
+              &lt;button (click)="tag = '段1'">段1&lt;/button>
+              &lt;button (click)="tag = '段2'">段2&lt;/button>
+            &lt;/div>
+          &lt;/div>
+        &lt;/div>
+        &lt;div class="px-form-control">
+          &lt;label for="input2">CIDR&lt;/label>
+          &lt;div class="px-input-wrapper">
+            &lt;input class="px-input lg" id="input2">
+            &lt;span class="notes">格式说明：0.0.0.0/0&lt;/span>
+          &lt;/div>
+        &lt;/div>
+        &lt;div class="px-form-control">
+          &lt;label for="input3">可用地址池&lt;/label>
+          &lt;div class="px-input-wrapper">
+            &lt;input class="px-input sm" id="input3" placeholder="0.0.0.2">
+            &lt;i class="link">-&lt;/i>
+            &lt;input class="px-input sm" placeholder="0.0.0.254">
+          &lt;/div>
+        &lt;/div>
+        &lt;div class="px-form-control">
+          &lt;label for="input4">带宽&lt;/label>
+          &lt;div class="px-input-wrapper">
+            &lt;input class="px-input lg addon" id="input4">
+            &lt;span class="addon">Mbps&lt;/span>
+          &lt;/div>
+        &lt;/div>
+        &lt;div class="px-form-control">
+          &lt;label>DHCP&lt;/label>
+          &lt;div class="px-radio-group">
+            &lt;label class="px-radio-wrapper">
+              &lt;input type="radio" class="px-radio" name="radio1">
+              &lt;span>是&lt;/span>
+            &lt;/label>
+            &lt;label class="px-radio-wrapper">
+              &lt;input type="radio" class="px-radio" name="radio1">
+              &lt;span>否&lt;/span>
+            &lt;/label>
+          &lt;/div>
+        &lt;/div>
+      &lt;/form>
+      &lt;div class="px-form-buttons">
+        &lt;button class="px-btn px-btn-primary">创建&lt;/button>
+        &lt;button class="px-btn px-btn-cancel">取消&lt;/button>
+      &lt;/div>
+    </code>
+  </pre>
 </section>
