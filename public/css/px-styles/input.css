@@ -33,11 +33,12 @@
 }
 
 .px-input-wrapper {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     max-width: 400px;
 }
 
 .px-input-wrapper span {
+    position: absolute;
     display: block;
     padding: 5px 0 0 10px;
     font-size: 12px;
