@@ -26,3 +26,12 @@
 .px-form-control .px-radio-group .px-radio-wrapper:not(:first-child){
     margin-left: 70px;
 }
+
+.px-form-buttons {
+    margin-top: 20px;
+    margin-left: 200px;
+}
+
+.px-form-buttons button:not(:first-child) {
+    margin-left: 10px;
+}
