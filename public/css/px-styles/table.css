@@ -1,12 +1,12 @@
 /*****************************/
 /* input
 /****************************/
-.px-table-wrapper .toolbar {
-    margin: 9px 0;
+.px-table-wrapper {
+    overflow: auto;
 }
 
-.px-table-wrapper .toolbar:after {
-    clear: both;
+.px-table-wrapper .toolbar {
+    padding: 9px 0;
 }
 
 .px-table-wrapper .toolbar button {
@@ -27,4 +27,32 @@
 
 .px-table-wrapper .toolbar input.search:focus {
     border-color: #3fb3ff;
+}
+
+.px-table {
+    clear: both;
+    min-width: 744px;
+    width: 100%;
+}
+
+.px-table td, .px-table th {
+    text-align: left;
+    padding-left: 20px;
+    line-height: 1;
+    vertical-align: middle;
+}
+
+.px-table th {
+    font-size: 14px;
+    color: #4d5761;
+    font-weight: normal;
+    height: 50px;
+    background: #f8f8f8;
+    border-color: #e6e6e6;
+    border-style: solid;
+    border-width: 1px 1px 1px 0;
+}
+
+.px-table th:last-child {
+    border-right: 0;
 }
