@@ -22,22 +22,13 @@
       </tr>
       </thead>
       <tbody>
-      <tr>
+      <tr *ngFor="let data of datas;let i = index">
         <td><input type="checkbox" class="px-checkbox"></td>
-        <td>1</td>
-        <td>user1</td>
-        <td>admin</td>
-        <td>激活</td>
-        <td>在线</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><input type="checkbox" class="px-checkbox"></td>
-        <td>2</td>
-        <td>user2</td>
-        <td>admin</td>
-        <td>激活</td>
-        <td>在线</td>
+        <td>{{i + 1}}</td>
+        <td>{{data.username}}</td>
+        <td>{{data.role}}</td>
+        <td>{{data.status}}</td>
+        <td>{{data.state}}</td>
         <td></td>
       </tr>
       </tbody>
