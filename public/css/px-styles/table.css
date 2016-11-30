@@ -76,3 +76,7 @@
 .px-table tbody tr:hover {
     background-color: #e7f6ff;
 }
+
+.px-table tbody tr:last-child td {
+    border-bottom-color: #e6e6e6;
+}
